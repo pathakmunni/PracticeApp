@@ -57,3 +57,22 @@ const BottomTabs = () => (
 );
 
 export default BottomTabs;
+
+
+{/* <Tab.Navigator
+      screenOptions={({ route }) => ({
+        headerShown: true,
+        tabBarActiveTintColor: '#1e90ff',
+        tabBarInactiveTintColor: '#555',
+        tabBarLabelStyle: { fontSize: 12 },
+        tabBarIcon: ({ color, size }) => {
+          let iconName = 'alert-circle-outline';
+
+          if (route.name === 'Counter') iconName = 'calculator-outline';
+          else if (route.name === 'Intros') iconName = 'people-outline';
+          else if (route.name === 'Demo') iconName = 'list-outline';
+
+          return <Icon name={iconName} size={size} color={color} />;
+        },
+      })}
+    ></Tab.Navigator> */}
