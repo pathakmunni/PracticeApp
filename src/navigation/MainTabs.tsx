@@ -19,54 +19,9 @@ const MainTabs = () => {
         tabBarInactiveTintColor: Colors.secondary,
       }}
     >
-      <Tab.Screen
-        name={Strings.demo}
-        component={DemoScreen}
-        // options={{
-        //   tabBarIcon: ({ focused }) => (
-        //     <Image
-        //       source={Images.demo}
-        //       style={{
-        //         width: 24,
-        //         height: 24,
-        //         tintColor: focused ? Colors.primary : Colors.secondary,
-        //       }}
-        //     />
-        //   ),
-        // }}
-      />
-      <Tab.Screen
-        name={Strings.counter}
-        component={CounterScreen}
-        // options={{
-        //   tabBarIcon: ({ focused }) => (
-        //     <Image
-        //       source={Images.counter}
-        //       style={{
-        //         width: 24,
-        //         height: 24,
-        //         tintColor: focused ? Colors.primary : Colors.secondary,
-        //       }}
-        //     />
-        //   ),
-        // }}
-      />
-      <Tab.Screen
-        name={Strings.intro}
-        component={IntroScreen}
-        // options={{
-        //   tabBarIcon: ({ focused }) => (
-        //     <Image
-        //       source={Images.intro}
-        //       style={{
-        //         width: 24,
-        //         height: 24,
-        //         tintColor: focused ? Colors.primary : Colors.secondary,
-        //       }}
-        //     />
-        //   ),
-        // }}
-      />
+      <Tab.Screen name={Strings.demo} component={DemoScreen} />
+      <Tab.Screen name={Strings.counter} component={CounterScreen} />
+      <Tab.Screen name={Strings.intro} component={IntroScreen} />
     </Tab.Navigator>
   );
 };

@@ -12,16 +12,26 @@ import { useTypedDispatch, useTypedSelector } from '../store/store';
 import { useDispatch, useSelector } from 'react-redux';
 import { logout } from '../features/authSlice';
 import { RootState } from '../store/store';
+import { useNavigation } from '@react-navigation/native';
 const DemoScreen: React.FC = () => {
   const { items, loadItems, selectItem } = useDemo();
   const selected = useTypedSelector(state => state.demo.selectedItem);
 
   const dispatch = useTypedDispatch();
   const user = useTypedSelector(state => state.auth.user);
+  const navigation = useNavigation();
+
   useEffect(() => {
     loadItems();
   }, []);
 
+  const handleLogout = () => {
+    dispatch(logout());
+    navigation.reset({
+      index: 0,
+      routes: [{ name: 'Login' }], // 👈 go back to Login screen
+    });
+  };
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Demo Items</Text>
@@ -59,7 +69,7 @@ const DemoScreen: React.FC = () => {
         ) : (
           <Text>You are logged out</Text>
         )}
-        <Button title="Logout" onPress={() => dispatch(logout())} />
+        <Button title="Logout" onPress={handleLogout} />
       </View>
     </View>
   );

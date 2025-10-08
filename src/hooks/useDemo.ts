@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import useFetch from '../hooks/useFetch';
+import useFetch from './useFetch';
 import { setItems, setSelectedItem } from '../features/demoSlice';
 import { useTypedDispatch, useTypedSelector } from '../store/store';
 
