@@ -9,14 +9,12 @@ import {
 } from 'react-native';
 import useDemo from '../hooks/useDemo';
 import { useTypedDispatch, useTypedSelector } from '../store/store';
-import { useDispatch, useSelector } from 'react-redux';
 import { logout } from '../features/authSlice';
-import { RootState } from '../store/store';
 import { useNavigation } from '@react-navigation/native';
+
 const DemoScreen: React.FC = () => {
   const { items, loadItems, selectItem } = useDemo();
   const selected = useTypedSelector(state => state.demo.selectedItem);
-
   const dispatch = useTypedDispatch();
   const user = useTypedSelector(state => state.auth.user);
   const navigation = useNavigation();
@@ -32,6 +30,14 @@ const DemoScreen: React.FC = () => {
       routes: [{ name: 'Login' }], // 👈 go back to Login screen
     });
   };
+
+  const handleGoToInterview = () => {
+    // 👇 navigate to InterviewQuestionScreen
+    navigation.navigate('InterviewQuestion' as never);
+  };
+
+  const handleGoToOptimizedList = () => { navigation.navigate('OptimizedList' as never); };
+
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Demo Items</Text>
@@ -63,13 +69,26 @@ const DemoScreen: React.FC = () => {
         </View>
       )}
 
-      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      <View style={styles.bottomContainer}>
         {user ? (
-          <Text>Welcome {user.email}</Text>
+          <Text style={{ marginBottom: 10 }}>Welcome {user.email}</Text>
         ) : (
-          <Text>You are logged out</Text>
+          <Text style={{ marginBottom: 10 }}>You are logged out</Text>
         )}
-        <Button title="Logout" onPress={handleLogout} />
+
+        {/* ✅ Navigate to InterviewQuestionScreen */}
+        <Button
+          title="Go to Interview Questions"
+          onPress={handleGoToInterview}
+        />
+        <Button
+          title="OptimizedList"
+          onPress={handleGoToOptimizedList}
+        />
+
+        <View style={{ marginTop: 10 }}>
+          <Button title="Logout" color="red" onPress={handleLogout} />
+        </View>
       </View>
     </View>
   );
@@ -101,4 +120,9 @@ const styles = StyleSheet.create({
     borderRadius: 8,
   },
   footerText: { color: '#fff', fontWeight: '600', textAlign: 'center' },
+  bottomContainer: {
+    marginTop: 30,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
 });
