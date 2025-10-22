@@ -37,6 +37,7 @@ const DemoScreen: React.FC = () => {
   };
 
   const handleGoToOptimizedList = () => { navigation.navigate('OptimizedList' as never); };
+  const handleGoToMeasureExample = () => { navigation.navigate('MeasureExample' as never); };
 
   return (
     <View style={styles.container}>
@@ -84,6 +85,10 @@ const DemoScreen: React.FC = () => {
         <Button
           title="OptimizedList"
           onPress={handleGoToOptimizedList}
+        />
+         <Button
+          title="MeasureExample"
+          onPress={handleGoToMeasureExample}
         />
 
         <View style={{ marginTop: 10 }}>

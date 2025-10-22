@@ -5,6 +5,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import MainTabs from './MainTabs';
 import InterviewQuestionScreen from '../screens/InterviewQuestionScreen';
 import OptimizedListScreen from '../screens/OptimizedList';
+import MeasureExample from '../screens/MeasureExample';
 
 const Stack = createNativeStackNavigator();
 
@@ -24,6 +25,11 @@ const MainStack = () => {
         name="OptimizedList"
         component={OptimizedListScreen}
         options={{ headerShown: true, title: 'Optimized List' }}
+      />
+      <Stack.Screen
+        name="MeasureExample"
+        component={MeasureExample}
+        options={{ headerShown: true, title: 'Measure Example' }}
       />
     </Stack.Navigator>
   );
