@@ -1,14 +1,81 @@
-import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import React, { useEffect, useState } from 'react';
+import {
+  View,
+  Text,
+  StyleSheet,
+  TouchableOpacity,
+  ActivityIndicator,
+} from 'react-native';
 import { useTypedDispatch, useTypedSelector } from '../store/store';
 import { increment, decrement, reset } from '../features/counterSlice';
+import useFetch from '../hooks/useFetch';
 
 const CounterScreen = () => {
-  const count = useTypedSelector((state) => state.counter.value);
+  const count = useTypedSelector(state => state.counter.value);
   const dispatch = useTypedDispatch();
+
+  const { fetchData } = useFetch();
+  const [users, setUsers] = useState<any[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  const getUsers = async () => {
+  setLoading(true);
+
+  try {
+    const res = await fetchData(
+      'https://server-7xep.onrender.com/api',
+      'GET'
+    );
+    setUsers(res);
+  } catch (error: any) {
+    if (error.response?.status === 503) {
+      console.log("Retrying after server wake-up...");
+      setTimeout(() => getUsers(), 3000);
+    } else {
+      console.log("Unexpected Error:", error);
+    }
+  } finally {
+    setLoading(false);
+  }
+};
+
+
+  // const getUsers = async () => {
+  //   try {
+  //     console.log("Fetching users...");
+  //     const response = await fetchData(
+  //       'https://server-7xep.onrender.com',
+  //       'GET',
+  //     );
+  //     setUsers(response);
+
+  //     console.log("Fetched users:", response);
+  //   } catch (error) {
+  //     console.log(error);
+  //   } finally {
+  //     setLoading(false);
+  //   }
+  // };
+
+  useEffect(() => {
+    getUsers();
+  }, []);
+
+  if (loading) {
+    return <ActivityIndicator size="large" />;
+  }
 
   return (
     <View style={styles.container}>
+
+      <View style={{ padding: 20 }}>
+        <Text style={{ fontSize: 18, fontWeight: '600', marginBottom: 10 }}>
+          Fetched Users:
+        </Text>
+        {users.map(user => (
+          <Text>{user}oooooo</Text>
+        ))}
+      </View>
       <Text style={styles.title}>Counter</Text>
       <Text style={styles.count}>{count}</Text>
 
@@ -34,6 +101,8 @@ const CounterScreen = () => {
       >
         <Text style={styles.btnText}>Reset</Text>
       </TouchableOpacity>
+
+      
     </View>
   );
 };
@@ -41,15 +110,23 @@ const CounterScreen = () => {
 export default CounterScreen;
 
 const styles = StyleSheet.create({
-  container: { flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: '#fff' },
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#fff',
+  },
   title: { fontSize: 22, fontWeight: '600', marginBottom: 20 },
   count: { fontSize: 60, fontWeight: 'bold', marginBottom: 30, color: '#333' },
   row: { flexDirection: 'row', gap: 20 },
-  btn: { paddingVertical: 12, paddingHorizontal: 24, borderRadius: 8, elevation: 3 },
+  btn: {
+    paddingVertical: 12,
+    paddingHorizontal: 24,
+    borderRadius: 8,
+    elevation: 3,
+  },
   btnText: { fontSize: 20, fontWeight: '600', color: '#fff' },
 });
-
-
 
 // import React from 'react';
 // import { View, Text, Button, StyleSheet } from 'react-native';
@@ -80,7 +157,6 @@ const styles = StyleSheet.create({
 // });
 
 // export default CounterScreen;
-
 
 // import React from 'react';
 // import { View, Text, Button } from 'react-native';

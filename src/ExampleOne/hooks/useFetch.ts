@@ -15,9 +15,13 @@ const useFetch = () => {
         timeout: 15000,
       });
       return res.data;
-    } catch (err) {
-      console.error('API Error:', err);
-      throw err; // throw so callers can handle it
+    } catch (err: any) {
+      if (axios.isAxiosError(err)) {
+        console.error('API Error: status=', err.response?.status, 'data=', err.response?.data);
+      } else {
+        console.error('API Error (non-axios):', err);
+      }
+      throw err;
     }
   };
 
