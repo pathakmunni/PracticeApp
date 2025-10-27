@@ -113,15 +113,34 @@
 
 ///////==========================================================================================
 //ExampleFive Counter with Redux Toolkit
-import React from 'react';
-import { Provider } from 'react-redux';
-import { store } from './src/ExampleFive/redux/store';
-import Home from './src/ExampleFive/Home';
+// import React from 'react';
+// import { Provider } from 'react-redux';
+// import { store } from './src/ExampleFive/redux/store';
+// import Home from './src/ExampleFive/Home';
+
+// export default function App() {
+//   return (
+//     <Provider store={store}>
+//       <Home />
+//     </Provider>
+//   );
+// }
+
+///////==========================================================================================
+//ExampleSix LoginScreen.tsx and DashboardScreen.tsx with Navigation
+
+import React from "react";
+import { NavigationContainer } from "@react-navigation/native";
+import AppNavigator from "./src/ExampleSix/navigation/AppNavigator";
+import { Provider } from "react-redux";
+import { store } from "./src/ExampleSix/redux/store";
 
 export default function App() {
   return (
-    <Provider store={store}>
-      <Home />
+     <Provider store={store}>
+      <NavigationContainer>
+        <AppNavigator />
+      </NavigationContainer>
     </Provider>
   );
 }
