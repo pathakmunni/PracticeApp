@@ -5,6 +5,8 @@ import {
   Text,
   TouchableOpacity,
   ActivityIndicator,
+  StyleSheet,
+  Image,
 } from 'react-native';
 import { useDispatch } from 'react-redux';
 import AsyncStorage from '@react-native-async-storage/async-storage';
@@ -12,12 +14,16 @@ import { loginSuccess } from '../redux/AuthSlice';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { useNavigation } from '@react-navigation/native';
 import axios from 'axios';
+// @ts-ignore: module has no type declarations
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+
 const LoginScreen = () => {
   const dispatch = useDispatch();
   const navigation = useNavigation<NativeStackNavigationProp<any>>();
 
-  const [email, setEmail] = useState('emilys'); //test@gmail.com //9876543210 //emilys
-  const [password, setPassword] = useState('emilyspass'); //123456 //emilyspass
+  const [email, setEmail] = useState('emilys');
+  const [password, setPassword] = useState('emilyspass');
+  const [secure, setSecure] = useState(true);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
 
@@ -66,52 +72,129 @@ const LoginScreen = () => {
   };
 
   return (
-    <View style={{ padding: 20, marginTop: 100 }}>
-      <Text style={{ fontSize: 26, fontWeight: 'bold', marginBottom: 20 }}>
-        Login
-      </Text>
-
-      {error !== '' && (
-        <Text style={{ color: 'red', marginBottom: 10 }}>{error}</Text>
-      )}
-
-      <TextInput
-        placeholder="Username"
-        style={{ borderWidth: 1, marginBottom: 10, padding: 10 }}
-        value={email}
-        onChangeText={setEmail}
-      />
-
-      <TextInput
-        placeholder="Password"
-        secureTextEntry
-        style={{ borderWidth: 1, marginBottom: 10, padding: 10 }}
-        value={password}
-        onChangeText={setPassword}
-      />
-
-      <TouchableOpacity
-        onPress={handleLogin}
-        style={{
-          backgroundColor: 'black',
-          padding: 12,
-          alignItems: 'center',
-          borderRadius: 8,
+    <View style={styles.main}>
+      <Image
+        source={{
+          uri: 'https://cdn-icons-png.flaticon.com/512/2769/2769603.png',
         }}
-        disabled={loading}
-      >
-        {loading ? (
-          <ActivityIndicator color="white" />
-        ) : (
-          <Text style={{ color: 'white', fontWeight: 'bold' }}>Login</Text>
-        )}
-      </TouchableOpacity>
+        style={styles.topImage}
+      />
+
+      <View style={styles.card}>
+        <Text style={styles.title}>Welcome 👋</Text>
+        <Text style={styles.subtitle}>Login to continue</Text>
+
+        {error !== '' && <Text style={styles.error}>{error}</Text>}
+
+        {/* Username */}
+        <View style={styles.inputWrapper}>
+          <Icon name="account" size={22} color="#444" />
+          <TextInput
+            placeholder="Username"
+            style={styles.input}
+            value={email}
+            onChangeText={setEmail}
+          />
+        </View>
+
+        {/* Password */}
+        <View style={styles.inputWrapper}>
+          <Icon name="lock" size={22} color="#444" />
+          <TextInput
+            placeholder="Password"
+            secureTextEntry={secure}
+            style={styles.input}
+            value={password}
+            onChangeText={setPassword}
+          />
+          <TouchableOpacity onPress={() => setSecure(!secure)}>
+            <Icon name={secure ? 'eye-off' : 'eye'} size={22} color="#444" />
+          </TouchableOpacity>
+        </View>
+
+        {/* Login Button */}
+        <TouchableOpacity
+          onPress={handleLogin}
+          style={styles.loginButton}
+          disabled={loading}
+        >
+          {loading ? (
+            <ActivityIndicator color="#fff" />
+          ) : (
+            <Text style={styles.loginText}>Login</Text>
+          )}
+        </TouchableOpacity>
+      </View>
     </View>
   );
 };
 
 export default LoginScreen;
 
+const styles = StyleSheet.create({
+  main: {
+    flex: 1,
+    backgroundColor: '#4A6CF7',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  topImage: {
+    width: 160,
+    height: 160,
+    marginBottom: -50,
+  },
+  card: {
+    width: '90%',
+    backgroundColor: '#fff',
+    padding: 25,
+    borderRadius: 20,
+    elevation: 10,
+  },
+  title: {
+    fontSize: 26,
+    fontWeight: '700',
+    marginBottom: 5,
+    textAlign: 'center',
+  },
+  subtitle: {
+    fontSize: 15,
+    color: '#777',
+    marginBottom: 25,
+    textAlign: 'center',
+  },
+  error: {
+    color: 'red',
+    marginBottom: 12,
+    textAlign: 'center',
+  },
+  inputWrapper: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    borderWidth: 1.2,
+    borderColor: '#ddd',
+    borderRadius: 10,
+    paddingHorizontal: 12,
+    marginBottom: 15,
+  },
+  input: {
+    flex: 1,
+    padding: 12,
+  },
+  loginButton: {
+    backgroundColor: '#4A6CF7',
+    paddingVertical: 14,
+    borderRadius: 12,
+    alignItems: 'center',
+    marginTop: 10,
+  },
+  loginText: {
+    color: '#fff',
+    fontSize: 17,
+    fontWeight: '700',
+  },
+});
+
+// Test Credentials for DummyJSON API
 // Username: kminchelle
 // Password: 0lelplR
 
@@ -123,4 +206,9 @@ export default LoginScreen;
 // {
 //   "mobile": "9876543210",
 //   "password": "123456"
+// }
+
+// {
+//   "email": "emilys",
+//   "password": "emilyspass"
 // }
