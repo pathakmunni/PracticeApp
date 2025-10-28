@@ -9,12 +9,20 @@ import {
 } from 'react-native';
 // @ts-ignore: module has no type declarations
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
-import { useSelector } from 'react-redux';
+import { useSelector,useDispatch } from 'react-redux';
 import { RootState } from '../redux/store';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import { logout } from '../redux/AuthSlice';
 
-const ProfileScreen = () => {
+const ProfileScreen = ({ navigation }) => {
+  const dispatch = useDispatch();
   const { user } = useSelector((state: RootState) => state.auth);
 
+    const handleLogout = async () => {
+    await AsyncStorage.clear();
+    dispatch(logout());
+    navigation.replace('Login');
+  };
   return (
     <ScrollView style={styles.container}>
       {/* Header */}
@@ -66,7 +74,7 @@ const ProfileScreen = () => {
           <Text style={styles.btnText}>Edit Profile</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={[styles.btn, styles.logoutBtn]}>
+        <TouchableOpacity onPress={handleLogout} style={[styles.btn, styles.logoutBtn]}>
           <Icon name="logout" size={20} color="#fff" />
           <Text style={styles.btnText}>Logout</Text>
         </TouchableOpacity>
@@ -161,23 +169,3 @@ const styles = StyleSheet.create({
   },
 });
 
-
-
-// import React from 'react';
-// import { View, Text } from 'react-native';
-// import { useSelector } from 'react-redux';
-// import { RootState } from '../redux/store';
-
-// const ProfileScreen = () => {
-//   const { user } = useSelector((state: RootState) => state.auth);
-
-//   return (
-//     <View style={{ padding: 20 }}>
-//       <Text style={{ fontSize: 22, marginBottom: 10 }}>Profile</Text>
-//       <Text>Name: {user?.firstName}</Text>
-//       <Text>Email: {user?.email}</Text>
-//     </View>
-//   );
-// };
-
-// export default ProfileScreen;

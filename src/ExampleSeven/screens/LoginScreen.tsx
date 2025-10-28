@@ -21,54 +21,6 @@ const LoginScreen = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
 
-  // const handleLogin = async () => {
-  //   if (!email || !password) {
-  //     setError('All fields are required');
-  //     return;
-  //   }
-
-  //   setLoading(true);
-  //   setError('');
-
-  //   try {
-  //     const res = await axios.post(
-  //       'https://dummyjson.com/auth/login',
-  //       {
-  //         email: email, // DummyJSON uses "username", not "email"
-  //         password: password,
-  //       },
-  //       {
-  //         headers: { 'Content-Type': 'application/json' },
-  //       }
-  //     );
-
-  //     const data = res.data;
-
-  //     if (data?.token) {
-  //       // ✅ Store Token + User
-  //       await AsyncStorage.setItem('token', data.token);
-  //       await AsyncStorage.setItem('user', JSON.stringify(data));
-
-  //       // ✅ Update Redux
-  //       dispatch(
-  //         loginSuccess({
-  //           token: data.token,
-  //           user: data,
-  //         })
-  //       );
-
-  //       navigation.replace('Dashboard');
-  //     } else {
-  //       setError('Invalid Credentials');
-  //     }
-  //   } catch (e: any) {
-  //     console.log('Login Error:', e?.response?.data);
-  //     setError('Invalid Credentials');
-  //   } finally {
-  //     setLoading(false);
-  //   }
-  // };
-
   const handleLogin = async () => {
     if (!email || !password) {
       setError('All fields are required');
