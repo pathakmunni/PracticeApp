@@ -14,6 +14,8 @@ import { logout } from '../redux/AuthSlice';
 import { RootState } from '../redux/store';
 // @ts-ignore: no declaration file for react-native-vector-icons/MaterialCommunityIcons
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import { NativeStackNavigationProp } from '@react-navigation/native-stack';
+import { useNavigation } from '@react-navigation/native';
 
 const foodCategories = [
   { id: '1', title: 'Pizza', icon: 'pizza', bg: '#FFE6D4' },
@@ -22,7 +24,8 @@ const foodCategories = [
   { id: '4', title: 'Sweets', icon: 'cookie', bg: '#E6FFD4' },
 ];
 
-const DashboardScreen = ({ navigation }) => {
+const DashboardScreen = () => {
+  const navigation = useNavigation<NativeStackNavigationProp<any>>();
   const dispatch = useDispatch();
   const { user } = useSelector((state: RootState) => state.auth);
 

@@ -13,8 +13,11 @@ import { useSelector,useDispatch } from 'react-redux';
 import { RootState } from '../redux/store';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { logout } from '../redux/AuthSlice';
+import { NativeStackNavigationProp } from '@react-navigation/native-stack';
+import { useNavigation } from '@react-navigation/native';
 
-const ProfileScreen = ({ navigation }) => {
+const ProfileScreen = () => {
+  const navigation = useNavigation<NativeStackNavigationProp<any>>();
   const dispatch = useDispatch();
   const { user } = useSelector((state: RootState) => state.auth);
 

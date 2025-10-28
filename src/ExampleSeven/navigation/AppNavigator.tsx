@@ -35,7 +35,7 @@ const AppNavigator = () => {
   if (loading) return null;
 
   return (
-    <Stack.Navigator screenOptions={{ headerShown: true }}>
+    <Stack.Navigator screenOptions={{ headerShown: false }}>
       {!token ? (
         <Stack.Screen name="Login" component={LoginScreen} />
       ) : (
