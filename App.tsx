@@ -1,3 +1,4 @@
+///////==========================================================================================
 //////ExampleOne Navigation with Redux
 
 // import React from 'react';
@@ -33,7 +34,6 @@
 // }
 
 ///////==========================================================================================
-
 //// ExampleTwo UserListScreen.tsx or TodoScreen
 
 // import React from 'react';
@@ -78,7 +78,6 @@
 // export default App;
 
 ///////==========================================================================================
-
 //ExampleThree UserListScreen.tsx
 
 // import React from "react";
@@ -127,13 +126,33 @@
 // }
 
 ///////==========================================================================================
-//ExampleSix LoginScreen.tsx and DashboardScreen.tsx with Navigation
+////ExampleSix LoginScreen.tsx and DashboardScreen.tsx with Navigation
+
+// import React from "react";
+// import { NavigationContainer } from "@react-navigation/native";
+// import AppNavigator from "./src/ExampleSix/navigation/AppNavigator";
+// import { Provider } from "react-redux";
+// import { store } from "./src/ExampleSix/redux/store";
+
+// export default function App() {
+//   return (
+//      <Provider store={store}>
+//       <NavigationContainer>
+//         <AppNavigator />
+//       </NavigationContainer>
+//     </Provider>
+//   );
+// }
+
+
+////////==========================================================================================
+////ExampleSix copy LoginScreen.tsx and DashboardScreen.tsx with Navigation
 
 import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
-import AppNavigator from "./src/ExampleSix/navigation/AppNavigator";
+import AppNavigator from "./src/ExampleSeven/navigation/AppNavigator";
 import { Provider } from "react-redux";
-import { store } from "./src/ExampleSix/redux/store";
+import { store } from "./src/ExampleSeven/redux/store";
 
 export default function App() {
   return (
@@ -143,4 +162,4 @@ export default function App() {
       </NavigationContainer>
     </Provider>
   );
-}
+} 
