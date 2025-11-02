@@ -212,13 +212,12 @@ import { NavigationContainer } from "@react-navigation/native";
 import { Provider } from "react-redux";
 import { store } from "./src/ExampleNine/redux/store";
 import NetworkInfoExm from "./src/ExampleNine/screens/NetworkInfoExm";
+import AppNavigator from "./src/ExampleNine/navigation/AppNavigator";
 
 export default function App() {
   return (
      <Provider store={store}>
-      <NavigationContainer>
-        <NetworkInfoExm />
-      </NavigationContainer>
+        <AppNavigator />
     </Provider>
   );
 } 
