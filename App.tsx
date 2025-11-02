@@ -189,18 +189,60 @@
 ////////==========================================================================================
 ////ExampleEight LoginScreen.tsx and DashboardScreen.tsx with Navigation
 
-import React from "react";
-import { NavigationContainer } from "@react-navigation/native";
-import AppNavigator from "./src/ExampleEight/navigation/AppNavigator";
-import { Provider } from "react-redux";
-import { store } from "./src/ExampleEight/redux/store";
+// import React from "react";
+// import { NavigationContainer } from "@react-navigation/native";
+// import AppNavigator from "./src/ExampleEight/navigation/AppNavigator";
+// import { Provider } from "react-redux";
+// import { store } from "./src/ExampleEight/redux/store";
 
-export default function App() {
+// export default function App() {
+//   return (
+//      <Provider store={store}>
+//       <NavigationContainer>
+//         <AppNavigator />
+//       </NavigationContainer>
+//     </Provider>
+//   );
+// }
+
+
+////////==========================================================================================
+////ExampleNine LoginScreen.tsx and DashboardScreen.tsx with Navigation
+
+// import React from "react";
+// import { NavigationContainer } from "@react-navigation/native";
+// import AppNavigator from "./src/ExampleNine/navigation/AppNavigator";
+// import { Provider } from "react-redux";
+// import { store } from "./src/ExampleNine/redux/store";
+
+// export default function App() {
+//   return (
+//      <Provider store={store}>
+//       <NavigationContainer>
+//         <AppNavigator />
+//       </NavigationContainer>
+//     </Provider>
+//   );
+// } 
+
+
+////////==========================================================================================
+////ExampleTen LoginScreen.tsx and DashboardScreen.tsx with Navigation
+
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { AuthProvider } from './src/ExampleTen/context/AuthContext';
+import LoginScreen from './src/ExampleTen/screens/LoginScreen';
+
+const App = () => {
   return (
-     <Provider store={store}>
+    <AuthProvider>
       <NavigationContainer>
-        <AppNavigator />
+        <LoginScreen />
       </NavigationContainer>
-    </Provider>
+    </AuthProvider>
   );
-}
+};
+
+export default App;
+
