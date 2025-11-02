@@ -1,5 +1,3 @@
-
-
 ///////==========================================================================================
 //////ExampleOne Navigation with Redux
 
@@ -205,44 +203,43 @@
 //   );
 // }
 
-
 ////////==========================================================================================
 ////ExampleNine LoginScreen.tsx and DashboardScreen.tsx with Navigation
 
-// import React from "react";
-// import { NavigationContainer } from "@react-navigation/native";
+import React from "react";
+import { NavigationContainer } from "@react-navigation/native";
 // import AppNavigator from "./src/ExampleNine/navigation/AppNavigator";
-// import { Provider } from "react-redux";
-// import { store } from "./src/ExampleNine/redux/store";
+import { Provider } from "react-redux";
+import { store } from "./src/ExampleNine/redux/store";
+import NetworkInfoExm from "./src/ExampleNine/screens/NetworkInfoExm";
 
-// export default function App() {
-//   return (
-//      <Provider store={store}>
-//       <NavigationContainer>
-//         <AppNavigator />
-//       </NavigationContainer>
-//     </Provider>
-//   );
-// } 
-
+export default function App() {
+  return (
+     <Provider store={store}>
+      <NavigationContainer>
+        <NetworkInfoExm />
+      </NavigationContainer>
+    </Provider>
+  );
+} 
 
 ////////==========================================================================================
 ////ExampleTen LoginScreen.tsx and DashboardScreen.tsx with Navigation
 
-import React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
-import { AuthProvider } from './src/ExampleTen/context/AuthContext';
-import LoginScreen from './src/ExampleTen/screens/LoginScreen';
+// import React from 'react';
+// import { NavigationContainer } from '@react-navigation/native';
+// // import { AuthProvider } from './src/ExampleTen/context/AuthContext';
+// // import LoginScreen from './src/ExampleTen/screens/LoginScreen';
+// import OfflineQueueExample from './src/ExampleTen/screens/OfflineQueueExample';
 
-const App = () => {
-  return (
-    <AuthProvider>
-      <NavigationContainer>
-        <LoginScreen />
-      </NavigationContainer>
-    </AuthProvider>
-  );
-};
+// const App = () => {
+//   return (
+//       <NavigationContainer>
+//         {/* <LoginScreen /> */}
+//         <OfflineQueueExample />
+//       </NavigationContainer>
+//   );
+// };
 
-export default App;
+// export default App;
 
