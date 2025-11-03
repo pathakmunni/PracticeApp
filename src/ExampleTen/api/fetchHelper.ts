@@ -1,7 +1,7 @@
 // src/api/fetchHelper.ts
 import axios from "axios";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import { API_KEY, API_BASE_URL } from "../config";
+import { API_KEY, API_BASE_URL } from "./config";
 
 export const apiCall = async (
   endpoint: string,
