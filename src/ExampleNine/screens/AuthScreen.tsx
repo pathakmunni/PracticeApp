@@ -8,20 +8,16 @@ import { RootState } from "../redux/store";
 const AuthScreen = () => {
   const dispatch = useDispatch();
   const user = useSelector((state: RootState) => state.auth.user);
-
   const [loading, setLoading] = useState(false);
-
   // ✅ Example API call for login
   const handleLogin = async () => {
     try {
       setLoading(true);
-
       // Replace this with your real API endpoint
       const response = await axios.post("https://reqres.in/api/login", {
         email: "eve.holt@reqres.in",
         password: "cityslicka",
       });
-
       // In real API, you’ll get token/user info — here we fake it
       if (response.status === 200) {
         const userData = {

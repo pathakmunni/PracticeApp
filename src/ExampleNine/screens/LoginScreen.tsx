@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { login, logout } from "../redux/authSlice";
 import { RootState } from "../redux/store";
 
-const AuthScreen = () => {
+const LoginScreen = () => {
   const dispatch = useDispatch();
   const user = useSelector((state: RootState) => state.auth.user);
 
@@ -40,4 +40,4 @@ const styles = StyleSheet.create({
   text: { fontSize: 18, marginBottom: 10 },
 });
 
-export default AuthScreen;
+export default LoginScreen;
