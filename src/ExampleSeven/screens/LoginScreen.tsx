@@ -17,6 +17,9 @@ import axios from 'axios';
 // @ts-ignore: module has no type declarations
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
+import { TurboModuleRegistry, Platform } from 'react-native';
+
+export const isNewArchitectureEnabled = !!TurboModuleRegistry.getEnforcing;
 const LoginScreen = () => {
   const dispatch = useDispatch();
   const navigation = useNavigation<NativeStackNavigationProp<any>>();
@@ -26,6 +29,8 @@ const LoginScreen = () => {
   const [secure, setSecure] = useState(true);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
+
+  console.log('New Architecture Enabled:', isNewArchitectureEnabled);
 
   const handleLogin = async () => {
     if (!email || !password) {

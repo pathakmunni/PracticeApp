@@ -1,6 +1,40 @@
 ///////==========================================================================================
 //////ExampleOne Navigation with Redux
 
+
+
+
+
+// import React from "react";
+// import AppNavigator from "./src/ExampleSeven/navigation/AppNavigator";
+
+// export default function App() {
+//   return (
+//         <AppNavigator />
+//   );
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // import React from 'react';
 // import { NavigationContainer } from '@react-navigation/native';
 // import { Provider } from 'react-redux';
@@ -168,21 +202,18 @@
 ////////==========================================================================================
 ////ExampleSeven LoginScreen.tsx and DashboardScreen.tsx with Navigation
 
-// import React from "react";
-// import { NavigationContainer } from "@react-navigation/native";
-// import AppNavigator from "./src/ExampleEight/navigation/AppNavigator";
-// import { Provider } from "react-redux";
-// import { store } from "./src/ExampleEight/redux/store";
+import React from "react";
+import AppNavigator from "./src/ExampleSeven/navigation/AppNavigator";
+import { Provider } from "react-redux";
+import { store } from "./src/ExampleSeven/redux/store";
 
-// export default function App() {
-//   return (
-//      <Provider store={store}>
-//       <NavigationContainer>
-//         <AppNavigator />
-//       </NavigationContainer>
-//     </Provider>
-//   );
-// }
+export default function App() {
+  return (
+     <Provider store={store}>
+        <AppNavigator />
+    </Provider>
+  );
+}
 
 ////////==========================================================================================
 ////ExampleEight LoginScreen.tsx and DashboardScreen.tsx with Navigation
@@ -225,20 +256,20 @@
 ////////==========================================================================================
 ////ExampleTen LoginScreen.tsx and DashboardScreen.tsx with Navigation
 
-import React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
-import AppNavigator from './src/ExampleTen/navigation/AppNavigator';
-import { Provider } from "react-redux";
-import { store } from './src/ExampleTen/redux/store';
-const App = () => {
-  return (
-      <Provider store={store}>
-       <NavigationContainer>
-         <AppNavigator />
-      </NavigationContainer>
-    </Provider>
-  );
-};
+// import React from 'react';
+// import { NavigationContainer } from '@react-navigation/native';
+// import AppNavigator from './src/ExampleTen/navigation/AppNavigator';
+// import { Provider } from "react-redux";
+// import { store } from './src/ExampleTen/redux/store';
+// const App = () => {
+//   return (
+//       <Provider store={store}>
+//        <NavigationContainer>
+//          <AppNavigator />
+//       </NavigationContainer>
+//     </Provider>
+//   );
+// };
 
-export default App;
+// export default App;
 

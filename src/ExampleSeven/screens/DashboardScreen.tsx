@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {
   View,
   Text,
@@ -35,6 +35,20 @@ const DashboardScreen = () => {
     navigation.replace('Login');
   };
 
+  const fetchGetApiData = async () => {
+    try {
+      const response = await fetch("https://server-7xep.onrender.com/");
+      const data = await response.json();
+      console.log('Fetched API Data:', data);
+    } catch (error) {
+      console.error('Error fetching API data:', error);
+    }
+  };
+
+  useEffect(() => {
+    fetchGetApiData();
+  }, []);
+
   return (
     <ScrollView style={styles.container}>
       {/* Header */}
@@ -46,15 +60,14 @@ const DashboardScreen = () => {
         <TouchableOpacity onPress={() => navigation.navigate('Profile')}>
           <Image
             source={{
-            uri:
-              user?.avatar ||
-              'https://cdn-icons-png.flaticon.com/512/3135/3135715.png',
-          }}
+              uri:
+                user?.avatar ||
+                'https://cdn-icons-png.flaticon.com/512/3135/3135715.png',
+            }}
             style={styles.avatar}
           />
         </TouchableOpacity>
       </View>
-
       {/* Banner */}
       <View style={styles.banner}>
         <Text style={styles.bannerText}>Delicious food at your doorstep</Text>
@@ -65,7 +78,6 @@ const DashboardScreen = () => {
           style={styles.bannerImage}
         />
       </View>
-
       {/* Categories */}
       <Text style={styles.sectionTitle}>Categories 🍽️</Text>
 
@@ -74,15 +86,19 @@ const DashboardScreen = () => {
         horizontal
         showsHorizontalScrollIndicator={false}
         renderItem={({ item }) => (
-          <View style={[styles.categoryCard, { backgroundColor: item.bg }]}>
+          <TouchableOpacity
+            onPress={() =>
+              navigation.navigate('FoodList', { category: item.title })
+            }
+            style={[styles.categoryCard, { backgroundColor: item.bg }]}
+          >
             <Icon name={item.icon} size={30} color="#333" />
             <Text style={styles.categoryText}>{item.title}</Text>
-          </View>
+          </TouchableOpacity>
         )}
-        keyExtractor={(item) => item.id}
+        keyExtractor={item => item.id}
         style={{ marginTop: 10 }}
       />
-
       {/* Profile Button */}
       <TouchableOpacity
         onPress={() => navigation.navigate('Profile')}
@@ -91,11 +107,28 @@ const DashboardScreen = () => {
         <Icon name="account-circle" size={20} color="#fff" />
         <Text style={styles.btnText}>Go to Profile</Text>
       </TouchableOpacity>
-
       {/* Logout */}
       <TouchableOpacity onPress={handleLogout} style={styles.logoutBtn}>
         <Icon name="logout" size={20} color="#fff" />
         <Text style={styles.btnText}>Logout</Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity
+        onPress={() => navigation.navigate('IncidentTree')}
+        style={styles.profileBtn}
+      >
+        
+        <Icon name="account-circle" size={20} color="#fff" />
+        <Text style={styles.btnText}>Go to IncidentTree</Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity
+        onPress={() => navigation.navigate('Tree')}
+        style={styles.profileBtn}
+      >
+        
+        <Icon name="account-circle" size={20} color="#fff" />
+        <Text style={styles.btnText}>Go to Tree</Text>
       </TouchableOpacity>
     </ScrollView>
   );
