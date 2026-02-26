@@ -1,0 +1,304 @@
+{
+  "appName": "UKCO Mobile Application",
+  "appConfig": {
+    "version": 1,
+    "language": "en",
+     "appId": "UKCO"
+  },
+  "units": [
+    {
+      "id": "unit_1",
+      "title": "Welcome to the UKCO App",
+      "subtitle": "Onboarding & Introduction",
+      "order": 1,
+      "isLocked": false,
+      "progress": 0,
+      "sections": [
+        {
+          "id": "u1_s1",
+          "title": "Welcome Message",
+          "type": "text",
+          "slides": [
+            {
+              "id": "slide1",
+              "type": "text",
+              "content": "Welcome to the UK Cultural Orientation (UKCO) App. This app has been designed to help you prepare for life in the United Kingdom."
+            }
+          ]
+        },
+        {
+          "id": "u1_s2",
+          "title": "What You Will Learn",
+          "type": "text",
+          "slides": [
+            {
+              "id": "slide1",
+              "type": "text",
+              "content": "The app covers key topics to help you settle into life in the UK."
+            }
+          ]
+        }
+      ],
+
+      "quiz": [
+        
+        {
+          "id": "q1",
+          "type": "true_false",
+          "question": "The UK has four countries.",
+          "correctAnswer": true,
+          "explanation": "England, Scotland, Wales and Northern Ireland."
+        },
+
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "question": "What is the currency of the UK?",
+          "options": [
+            { "id": "a", "text": "Euro" },
+            { "id": "b", "text": "British Pound" },
+            { "id": "c", "text": "Dollar" }
+          ],
+          "correctOptionId": "b"
+        },
+
+        {
+          "id": "q3",
+          "type": "multiple_choice",
+          "question": "Select UK values:",
+          "options": [
+            { "id": "a", "text": "Respect" },
+            { "id": "b", "text": "Violence" },
+            { "id": "c", "text": "Tolerance" }
+          ],
+          "correctOptionIds": ["a", "c"]
+        },
+
+        {
+          "id": "q4",
+          "type": "free_text",
+          "question": "Write the capital of England.",
+          "correctAnswer": "London"
+        },
+
+        {
+          "id": "q5",
+          "type": "hotspots",
+          "question": "Tap all emergency exits.",
+          "image": "assets/plane.png",
+          "mustTapAll": true,
+          "hotspots": [
+            { "id": "h1", "x": 0.2, "y": 0.3 },
+            { "id": "h2", "x": 0.8, "y": 0.3 }
+          ]
+        },
+
+        {
+          "id": "q6",
+          "type": "drag_drop",
+          "question": "Match country with capital",
+          "pairs": [
+            { "left": "England", "right": "London" },
+            { "left": "Scotland", "right": "Edinburgh" }
+          ]
+        },
+
+        {
+          "id": "q7",
+          "type": "video",
+          "question": "Watch this introduction video",
+          "videoUrl": "assets/intro.mp4",
+          "mustWatch": true
+        },
+
+        {
+          "id": "q8",
+          "type": "image_exploration",
+          "question": "Explore this image",
+          "image": "assets/community.png",
+          "description": "Tap areas to learn more"
+        },
+
+        {
+          "id": "q9",
+          "type": "info_link",
+          "question": "Read more about UK Government",
+          "url": "https://www.gov.uk"
+        }
+
+      ]
+    },
+
+    {
+      "id": "unit_2",
+      "title": "Introduction to the UK",
+      "subtitle": "Geography, Culture, Government",
+      "order": 2,
+      "isLocked": false,
+      "progress": 0,
+
+      "sections": [
+        {
+          "id": "u2_s1",
+          "title": "Location and Geography",
+          "type": "text_image",
+          "slides": [
+            {
+              "id": "slide1",
+              "type": "text",
+              "content": "The UK is made up of four countries: England, Scotland, Wales and Northern Ireland."
+            },
+            {
+              "id": "slide2",
+              "type": "image",
+              "content": "assets/uk_map.png"
+            }
+          ]
+        }
+      ],
+
+      "quiz": [
+        {
+          "id": "q1",
+          "type": "true_false",
+          "question": "The UK has four countries.",
+          "correctAnswer": true,
+          "explanation": "England, Scotland, Wales and Northern Ireland."
+        },
+        {
+          "id": "q2",
+          "type": "single_choice",
+          "question": "What is the currency of the UK?",
+          "options": [
+            { "id": "a", "text": "Euro" },
+            { "id": "b", "text": "British Pound" },
+            { "id": "c", "text": "Dollar" }
+          ],
+          "correctOptionId": "b"
+        },
+        {
+          "id": "q3",
+          "type": "multiple_choice",
+          "question": "Select UK values:",
+          "options": [
+            { "id": "a", "text": "Respect" },
+            { "id": "b", "text": "Violence" },
+            { "id": "c", "text": "Tolerance" }
+          ],
+          "correctOptionIds": ["a", "c"]
+        },
+        {
+          "id": "q4",
+          "type": "hotspots",
+          "question": "Tap all emergency exits.",
+          "image": "assets/plane.png",
+          "mustTapAll": true,
+          "hotspots": [
+            { "id": "h1", "x": 0.2, "y": 0.3 },
+            { "id": "h2", "x": 0.8, "y": 0.3 }
+          ]
+        },
+        {
+          "id": "q5",
+          "type": "drag_drop",
+          "question": "Match country with capital",
+          "pairs": [
+            { "left": "England", "right": "London" },
+            { "left": "Scotland", "right": "Edinburgh" }
+          ]
+        },
+        {
+          "id": "q6",
+          "type": "video",
+          "question": "Watch this introduction video",
+          "videoUrl": "assets/intro.mp4",
+          "mustWatch": true
+        },
+        {
+          "id": "q7",
+          "type": "info_link",
+          "question": "Read more about UK Government",
+          "url": "https://www.gov.uk"
+        }
+      ]
+    },
+
+    {
+      "id": "unit_3",
+      "title": "Your Journey to the UK",
+      "subtitle": "Travel & Arrival Guidance",
+      "order": 3,
+      "isLocked": true,
+      "progress": 0,
+
+      "sections": [
+        {
+          "id": "u3_s1",
+          "title": "Who Will Help You Travel",
+          "type": "text",
+          "slides": [
+            {
+              "id": "slide1",
+              "type": "text",
+              "content": "Your journey to the UK will be arranged by staff from IOM."
+            }
+          ]
+        }
+      ],
+
+      "quiz": [
+        {
+          "id": "q1",
+          "type": "true_false",
+          "question": "You should keep your IOM travel bag with you at all times.",
+          "correctAnswer": true
+        },
+        {
+          "id": "q2",
+          "type": "true_false",
+          "question": "Smoking is allowed on the plane.",
+          "correctAnswer": false
+        }
+      ]
+    },
+
+    {
+      "id": "unit_4",
+      "title": "Your First Few Weeks in the UK",
+      "subtitle": "Support, Independence, Services",
+      "order": 4,
+      "isLocked": true,
+      "progress": 0,
+
+      "sections": [
+        {
+          "id": "u4_s1",
+          "title": "Your Legal Status in the UK",
+          "type": "text",
+          "slides": [
+            {
+              "id": "slide1",
+              "type": "text",
+              "content": "When you arrive in the UK, you will have the legal right to stay."
+            }
+          ]
+        }
+      ],
+
+      "quiz": [
+        {
+          "id": "q1",
+          "type": "true_false",
+          "question": "Your eVisa is free of charge.",
+          "correctAnswer": true
+        },
+        {
+          "id": "q2",
+          "type": "true_false",
+          "question": "It is a criminal offence to use your phone while driving.",
+          "correctAnswer": true
+        }
+      ]
+    }
+  ]
+}

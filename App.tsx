@@ -202,18 +202,18 @@
 ////////==========================================================================================
 ////ExampleSeven LoginScreen.tsx and DashboardScreen.tsx with Navigation
 
-import React from "react";
-import AppNavigator from "./src/ExampleSeven/navigation/AppNavigator";
-import { Provider } from "react-redux";
-import { store } from "./src/ExampleSeven/redux/store";
+// import React from "react";
+// import AppNavigator from "./src/ExampleSeven/navigation/AppNavigator";
+// import { Provider } from "react-redux";
+// import { store } from "./src/ExampleSeven/redux/store";
 
-export default function App() {
-  return (
-     <Provider store={store}>
-        <AppNavigator />
-    </Provider>
-  );
-}
+// export default function App() {
+//   return (
+//      <Provider store={store}>
+//         <AppNavigator />
+//     </Provider>
+//   );
+// }
 
 ////////==========================================================================================
 ////ExampleEight LoginScreen.tsx and DashboardScreen.tsx with Navigation
@@ -273,3 +273,174 @@ export default function App() {
 
 // export default App;
 
+
+// // /**
+// //  * Sample React Native App
+// //  * https://github.com/facebook/react-native
+// //  *
+// //  * @format
+// //  */
+ 
+// // import { NewAppScreen } from '@react-native/new-app-screen';
+// // import { StatusBar, StyleSheet, useColorScheme, View,Text } from 'react-native';
+// // import {
+// //   SafeAreaProvider,
+// //   useSafeAreaInsets,
+// // } from 'react-native-safe-area-context';
+ 
+// // function App() {
+// //   const isDarkMode = useColorScheme() === 'dark';
+ 
+// //   return (
+// //     <SafeAreaProvider>
+// //       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
+// //       <AppContent />
+// //     </SafeAreaProvider>
+// //   );
+// // }
+ 
+// // function AppContent() {
+// //   const safeAreaInsets = useSafeAreaInsets();
+ 
+// //   return (
+// //     <View style={styles.container}>
+// //       <NewAppScreen
+// //         templateFileName="App.tsx"
+// //         safeAreaInsets={safeAreaInsets}
+// //       />
+// //       {/* <Text>Hello</Text> */}
+// //     </View>
+// //   );
+// // }
+ 
+// // const styles = StyleSheet.create({
+// //   container: {
+// //     flex: 1,
+// //   },
+// // });
+ 
+// // export default App;
+ 
+ 
+// import React, { useEffect } from 'react'
+// import { Provider, useDispatch } from 'react-redux'
+// import { store } from './src/app/store'
+// import RootNavigator from './src/navigation/RootNavigator'
+// import { initDB } from './src/services/sqliteService'
+// import { loadCourse } from './src/features/home/homeSlice'
+// import { useSync } from './src/hooks/useSync'
+// import { View, ActivityIndicator } from 'react-native'
+ 
+// /**
+//  * AppInitializer handles:
+//  * - DB init
+//  * - Course loading
+//  * - Sync listener
+//  */
+// const AppInitializer = () => {
+//   const dispatch = useDispatch()
+ 
+//   useSync()
+ 
+//   useEffect(() => {
+//     const initializeApp = async () => {
+//       // 1️⃣ Initialize SQLite
+//       initDB()
+ 
+//       // 2️⃣ Load course (API / SQLite / JSON fallback)
+//       // await dispatch(loadCourse())
+//     }
+ 
+//     initializeApp()
+//   }, [dispatch])
+ 
+//   return <RootNavigator />
+// }
+ 
+// const App = () => {
+//   return (
+//     <Provider store={store}>
+//       <AppInitializer />
+//     </Provider>
+//   )
+// }
+ 
+// export default App
+
+
+// /**
+//  * Sample React Native App
+//  * 
+
+// import React, { useEffect } from 'react'
+// import { Provider, useDispatch } from 'react-redux'
+// import { store } from './src/ExampleSqlLight/app/store'
+// import RootNavigator from './src/ExampleSqlLight/navigation/RootNavigator'
+// import { initDB } from './src/ExampleSqlLight/services/sqliteService'
+// import { NavigationContainer } from '@react-navigation/native'
+// import { useSync } from './src/ExampleSqlLight/hooks/useSync'
+
+// import { getCourseFromDB, saveCourseToDB } 
+// from './src/ExampleSqlLight/services/sqliteService'
+
+// import { loadCourse, setUnits } 
+// from './src/ExampleSqlLight/features/home/homeSlice'
+
+// const AppInitializer = () => {
+//   const dispatch = useDispatch()
+
+//   useSync()
+
+//   useEffect(() => {
+//   const init = async () => {
+//     await initDB()
+
+//     const localCourse = await getCourseFromDB()
+
+//     if (localCourse.length > 0) {
+//       dispatch(setUnits(localCourse))
+//     } else {
+//       const apiCourse = await dispatch(loadCourse()).unwrap()
+//       await saveCourseToDB(apiCourse)
+//     }
+//   }
+
+//   init()
+// }, [dispatch])
+
+//   return (
+//     <NavigationContainer>
+//       <RootNavigator />
+//     </NavigationContainer>
+//   )
+// }
+
+// const App = () => {
+//   return (
+//     <Provider store={store}>
+//       <AppInitializer />
+//     </Provider>
+//   )
+// }
+
+// export default App
+
+
+/////==========================================================================================
+////UKCO =======
+ 
+
+import React from 'react';
+import { Provider } from 'react-redux';
+import { store } from './src/UKCO/store';
+import RootNavigator from './src/UKCO/navigation/RootNavigator';
+
+const App = () => {
+  return (
+    <Provider store={store}>
+      <RootNavigator />
+    </Provider>
+  );
+};
+
+export default App;
