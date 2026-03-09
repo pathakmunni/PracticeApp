@@ -36,15 +36,12 @@ export default function QuestionScreen({ route, navigation }: any) {
         />
         <Button
           title={index === slides.length - 1 ? 'Finish' : 'Next'}
-          onPress={
-            () =>
-              slides.length - 1 > index
-                ? setIndex(prev => prev + 1)
-                : Alert.alert(
-                    'Quiz Completed',
-                    'You have completed the quiz!',
-                    [{ text: 'OK', onPress: () => navigation.goBack() }],
-                  )
+          onPress={() =>
+            slides.length - 1 > index
+              ? setIndex(prev => prev + 1)
+              : Alert.alert('Quiz Completed', 'You have completed the quiz!', [
+                  { text: 'OK', onPress: () => navigation.goBack() },
+                ])
           }
         />
       </View>

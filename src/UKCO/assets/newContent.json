@@ -3,302 +3,464 @@
   "appConfig": {
     "version": 1,
     "language": "en",
-     "appId": "UKCO"
+    "appId": "UKCO"
   },
   "units": [
     {
-      "id": "unit_1",
-      "title": "Welcome to the UKCO App",
-      "subtitle": "Onboarding & Introduction",
-      "order": 1,
-      "isLocked": false,
-      "progress": 0,
-      "sections": [
-        {
-          "id": "u1_s1",
-          "title": "Welcome Message",
-          "type": "text",
-          "slides": [
-            {
-              "id": "slide1",
-              "type": "text",
-              "content": "Welcome to the UK Cultural Orientation (UKCO) App. This app has been designed to help you prepare for life in the United Kingdom."
-            }
-          ]
-        },
-        {
-          "id": "u1_s2",
-          "title": "What You Will Learn",
-          "type": "text",
-          "slides": [
-            {
-              "id": "slide1",
-              "type": "text",
-              "content": "The app covers key topics to help you settle into life in the UK."
-            }
-          ]
-        }
-      ],
-
-      "quiz": [
-        
-        {
-          "id": "q1",
-          "type": "true_false",
-          "question": "The UK has four countries.",
-          "correctAnswer": true,
-          "explanation": "England, Scotland, Wales and Northern Ireland."
-        },
-
-        {
-          "id": "q2",
-          "type": "single_choice",
-          "question": "What is the currency of the UK?",
-          "options": [
-            { "id": "a", "text": "Euro" },
-            { "id": "b", "text": "British Pound" },
-            { "id": "c", "text": "Dollar" }
-          ],
-          "correctOptionId": "b"
-        },
-
-        {
-          "id": "q3",
-          "type": "multiple_choice",
-          "question": "Select UK values:",
-          "options": [
-            { "id": "a", "text": "Respect" },
-            { "id": "b", "text": "Violence" },
-            { "id": "c", "text": "Tolerance" }
-          ],
-          "correctOptionIds": ["a", "c"]
-        },
-
-        {
-          "id": "q4",
-          "type": "free_text",
-          "question": "Write the capital of England.",
-          "correctAnswer": "London"
-        },
-
-        {
-          "id": "q5",
-          "type": "hotspots",
-          "question": "Tap all emergency exits.",
-          "image": "assets/plane.png",
-          "mustTapAll": true,
-          "hotspots": [
-            { "id": "h1", "x": 0.2, "y": 0.3 },
-            { "id": "h2", "x": 0.8, "y": 0.3 }
-          ]
-        },
-
-        {
-          "id": "q6",
-          "type": "drag_drop",
-          "question": "Match country with capital",
-          "pairs": [
-            { "left": "England", "right": "London" },
-            { "left": "Scotland", "right": "Edinburgh" }
-          ]
-        },
-
-        {
-          "id": "q7",
-          "type": "video",
-          "question": "Watch this introduction video",
-          "videoUrl": "assets/intro.mp4",
-          "mustWatch": true
-        },
-
-        {
-          "id": "q8",
-          "type": "image_exploration",
-          "question": "Explore this image",
-          "image": "assets/community.png",
-          "description": "Tap areas to learn more"
-        },
-
-        {
-          "id": "q9",
-          "type": "info_link",
-          "question": "Read more about UK Government",
-          "url": "https://www.gov.uk"
-        }
-
-      ]
+      "id": "UKCO_unit_1_en",
+      "appId": "UKCO",
+      "country": "UK",
+      "type": "unit",
+      "unitId": "unit_1",
+      "language": "en",
+      "title": "WELCOME TO THE UKCO APP",
+      "slug": "welcome-to-the-ukco-app",
+      "displayOrder": 1,
+      "thumbnail": {
+        "mediaId": "media_unit2_thumb",
+        "url": "blob/UKCO/units/unit2/thumb.png",
+        "altText": "Introduction to the UK"
+      },
+      "estimatedDuration": 20,
+      "version": 1,
+      "status": "draft",
+      "isActive": false,
+      "createdAt": "2026-02-25T10:00:00Z",
+      "updatedAt": "2026-02-25T10:00:00Z",
+      "publishedAt": null,
+      "sections": []
     },
-
     {
-      "id": "unit_2",
-      "title": "Introduction to the UK",
-      "subtitle": "Geography, Culture, Government",
-      "order": 2,
-      "isLocked": false,
-      "progress": 0,
-
+      "id": "UKCO_unit_2_en",
+      "appId": "UKCO",
+      "country": "UK",
+      "type": "unit",
+      "unitId": "unit_2",
+      "language": "en",
+      "title": "INTRODUCTION TO THE UK",
+      "slug": "introduction-to-the-uk",
+      "displayOrder": 2,
+      "thumbnail": {
+        "mediaId": "media_unit2_thumb",
+        "url": "blob/UKCO/units/unit2/thumb.png",
+        "altText": "Introduction to the UK"
+      },
+      "estimatedDuration": 20,
+      "version": 1,
+      "status": "draft",
+      "isActive": false,
+      "createdAt": "2026-02-25T10:00:00Z",
+      "updatedAt": "2026-02-25T10:00:00Z",
+      "publishedAt": null,
       "sections": [
         {
-          "id": "u2_s1",
+          "sectionId": "sec_1",
+          "sectionType": "content",
+          "displayOrder": 1,
           "title": "Location and Geography",
-          "type": "text_image",
-          "slides": [
+          "status": "draft",
+          "sectionVersion": 1,
+          "isMandatory": true,
+          "content": [
             {
-              "id": "slide1",
-              "type": "text",
-              "content": "The UK is made up of four countries: England, Scotland, Wales and Northern Ireland."
+              "contentId": "sec1_c1",
+              "order": 1,
+              "type": "paragraph",
+              "text": "The United Kingdom (UK) is made up of four countries: England, Scotland, Wales and Northern Ireland. The UK is an island nation located off the northwestern coast of Europe."
             },
             {
-              "id": "slide2",
-              "type": "image",
-              "content": "assets/uk_map.png"
+              "contentId": "sec1_c2",
+              "order": 2,
+              "type": "paragraph",
+              "text": "The UK mainland is about 870 miles (1,400 km) from north to south. The population is approximately 67.6 million people."
+            },
+            {
+              "contentId": "sec1_c3",
+              "order": 3,
+              "type": "list",
+              "title": "Each country has its own capital city:",
+              "items": [
+                "England: London",
+                "Scotland: Edinburgh",
+                "Wales: Cardiff",
+                "Northern Ireland: Belfast"
+              ]
+            },
+            {
+              "contentId": "sec1_c4",
+              "order": 4,
+              "type": "paragraph",
+              "text": "Other major cities include Manchester, Birmingham, Liverpool, Leeds, Bristol, Glasgow, Aberdeen, Swansea and Newport."
             }
-          ]
-        }
-      ],
-
-      "quiz": [
-        {
-          "id": "q1",
-          "type": "true_false",
-          "question": "The UK has four countries.",
-          "correctAnswer": true,
-          "explanation": "England, Scotland, Wales and Northern Ireland."
-        },
-        {
-          "id": "q2",
-          "type": "single_choice",
-          "question": "What is the currency of the UK?",
-          "options": [
-            { "id": "a", "text": "Euro" },
-            { "id": "b", "text": "British Pound" },
-            { "id": "c", "text": "Dollar" }
           ],
-          "correctOptionId": "b"
+          "createdAt": "2026-02-25T10:00:00Z",
+          "updatedAt": "2026-02-25T10:00:00Z"
         },
         {
-          "id": "q3",
-          "type": "multiple_choice",
-          "question": "Select UK values:",
-          "options": [
-            { "id": "a", "text": "Respect" },
-            { "id": "b", "text": "Violence" },
-            { "id": "c", "text": "Tolerance" }
+          "sectionId": "sec_2",
+          "sectionType": "content",
+          "displayOrder": 2,
+          "title": "Languages",
+          "status": "draft",
+          "sectionVersion": 1,
+          "isMandatory": true,
+          "content": [
+            {
+              "contentId": "sec2_c1",
+              "order": 1,
+              "type": "paragraph",
+              "text": "English is the main language spoken in the UK. However, there are also regional languages:"
+            },
+            {
+              "contentId": "sec2_c2",
+              "order": 2,
+              "type": "list",
+              "items": [
+                "Welsh is spoken in Wales",
+                "Gaelic is spoken in parts of Scotland",
+                "Irish Gaelic is spoken in parts of Northern Ireland"
+              ]
+            },
+            {
+              "contentId": "sec2_c3",
+              "order": 3,
+              "type": "paragraph",
+              "text": "You will hear many different accents and dialects across the UK. Learning English is essential for settling into life in the UK."
+            }
           ],
-          "correctOptionIds": ["a", "c"]
+          "createdAt": "2026-02-25T10:00:00Z",
+          "updatedAt": "2026-02-25T10:00:00Z"
         },
         {
-          "id": "q4",
-          "type": "hotspots",
-          "question": "Tap all emergency exits.",
-          "image": "assets/plane.png",
-          "mustTapAll": true,
-          "hotspots": [
-            { "id": "h1", "x": 0.2, "y": 0.3 },
-            { "id": "h2", "x": 0.8, "y": 0.3 }
-          ]
+          "sectionId": "sec_3",
+          "sectionType": "content",
+          "displayOrder": 3,
+          "title": "Climate and Seasons",
+          "status": "draft",
+          "sectionVersion": 1,
+          "isMandatory": true,
+          "content": [
+            {
+              "contentId": "sec3_c1",
+              "order": 1,
+              "type": "paragraph",
+              "text": "The UK has a temperate climate with rainfall throughout the year. Temperatures rarely drop below -11°C or rise above 35°C."
+            },
+            {
+              "contentId": "sec3_c2",
+              "order": 2,
+              "type": "list",
+              "title": "Seasons in the UK:",
+              "items": [
+                "Spring (March - May): Often rainy, with flowers and trees blooming.",
+                "Summer (June - August): The warmest season with long sunny days and occasional thunderstorms.",
+                "Autumn (September - November): Days get colder, leaves fall from trees, and it can be wet and windy.",
+                "Winter (December - February): The coldest season with freezing temperatures, ice and sometimes snow."
+              ]
+            },
+            {
+              "contentId": "sec3_c3",
+              "order": 3,
+              "type": "paragraph",
+              "text": "Clocks go forward one hour in March and back one hour in October for daylight savings."
+            }
+          ],
+          "createdAt": "2026-02-25T10:00:00Z",
+          "updatedAt": "2026-02-25T10:00:00Z"
         },
         {
-          "id": "q5",
-          "type": "drag_drop",
-          "question": "Match country with capital",
-          "pairs": [
-            { "left": "England", "right": "London" },
-            { "left": "Scotland", "right": "Edinburgh" }
-          ]
+          "sectionId": "sec_4",
+          "sectionType": "content",
+          "displayOrder": 4,
+          "title": "Holidays and Celebrations",
+          "status": "draft",
+          "sectionVersion": 1,
+          "isMandatory": true,
+          "content": [
+            {
+              "contentId": "sec4_c1",
+              "order": 1,
+              "type": "paragraph",
+              "text": "The UK has several public holidays (called Bank Holidays) when banks and many businesses are closed."
+            },
+            {
+              "contentId": "sec4_c2",
+              "order": 2,
+              "type": "list",
+              "items": [
+                "New Year’s Day (1 January)",
+                "Early May Bank Holiday",
+                "Late May/Early June Bank Holiday",
+                "August Bank Holiday",
+                "Christmas Day (25 December)",
+                "Boxing Day (26 December)"
+              ]
+            }
+          ],
+          "createdAt": "2026-02-25T10:00:00Z",
+          "updatedAt": "2026-02-25T10:00:00Z"
         },
         {
-          "id": "q6",
-          "type": "video",
-          "question": "Watch this introduction video",
-          "videoUrl": "assets/intro.mp4",
-          "mustWatch": true
+          "sectionId": "sec_5",
+          "sectionType": "content",
+          "displayOrder": 5,
+          "title": "Government and Politics",
+          "status": "draft",
+          "sectionVersion": 1,
+          "isMandatory": true,
+          "content": [
+            {
+              "contentId": "sec5_c1",
+              "order": 1,
+              "type": "paragraph",
+              "text": "The UK is a constitutional monarchy and a parliamentary democracy."
+            },
+            {
+              "contentId": "sec5_c2",
+              "order": 2,
+              "type": "paragraph",
+              "text": "Head of State: King Charles III. Prime Minister: Sir Keir Starmer."
+            },
+            {
+              "contentId": "sec5_c3",
+              "order": 3,
+              "type": "paragraph",
+              "text": "Parliament has three parts: the King, the House of Lords and the House of Commons."
+            }
+          ],
+          "createdAt": "2026-02-25T10:00:00Z",
+          "updatedAt": "2026-02-25T10:00:00Z"
         },
         {
-          "id": "q7",
-          "type": "info_link",
-          "question": "Read more about UK Government",
-          "url": "https://www.gov.uk"
+          "sectionId": "sec_6",
+          "sectionType": "content",
+          "displayOrder": 6,
+          "title": "People and Culture",
+          "status": "draft",
+          "sectionVersion": 1,
+          "isMandatory": true,
+          "content": [
+            {
+              "contentId": "sec6_c1",
+              "order": 1,
+              "type": "list",
+              "title": "British values include:",
+              "items": ["Tolerance", "Fairness", "Respect"]
+            }
+          ],
+          "createdAt": "2026-02-25T10:00:00Z",
+          "updatedAt": "2026-02-25T10:00:00Z"
+        },
+        {
+          "sectionId": "sec_7",
+          "sectionType": "content",
+          "displayOrder": 7,
+          "title": "Religion",
+          "status": "draft",
+          "sectionVersion": 1,
+          "isMandatory": true,
+          "content": [
+            {
+              "contentId": "sec7_c1",
+              "order": 1,
+              "type": "paragraph",
+              "text": "The official religion is Christianity, but the UK is a multi-faith society. You are free to practise your religion."
+            }
+          ],
+          "createdAt": "2026-02-25T10:00:00Z",
+          "updatedAt": "2026-02-25T10:00:00Z"
+        },
+        {
+          "sectionId": "sec_8",
+          "sectionType": "content",
+          "displayOrder": 8,
+          "title": "Social Etiquette",
+          "status": "draft",
+          "sectionVersion": 1,
+          "isMandatory": true,
+          "content": [
+            {
+              "contentId": "sec8_c1",
+              "order": 1,
+              "type": "list",
+              "title": "Do:",
+              "items": [
+                "Queue and wait your turn",
+                "Say please, thank you and sorry",
+                "Be on time",
+                "Offer your seat to pregnant women, elderly or disabled people"
+              ]
+            }
+          ],
+          "createdAt": "2026-02-25T10:00:00Z",
+          "updatedAt": "2026-02-25T10:00:00Z"
+        },
+        {
+          "sectionId": "sec_9",
+          "sectionType": "content",
+          "displayOrder": 9,
+          "title": "UK Money",
+          "status": "draft",
+          "sectionVersion": 1,
+          "isMandatory": true,
+          "content": [
+            {
+              "contentId": "sec9_c1",
+              "order": 1,
+              "type": "paragraph",
+              "text": "The official currency is the British Pound (£), also called Pound Sterling. One pound equals 100 pence."
+            }
+          ],
+          "createdAt": "2026-02-25T10:00:00Z",
+          "updatedAt": "2026-02-25T10:00:00Z"
+        },
+        {
+          "sectionId": "quiz_sec",
+          "sectionType": "quiz",
+          "displayOrder": 999,
+          "title": "Test Your Knowledge",
+          "status": "draft",
+          "sectionVersion": 1,
+          "isMandatory": true,
+          "quizSettings": {
+            "requireFullCorrect": true,
+            "validationMode": "finalSubmission"
+          },
+          "questions": [
+            {
+              "questionId": "q1",
+              "order": 1,
+              "type": "multiple_choice",
+              "question": "What are the four countries that make up the United Kingdom?",
+              "options": [
+                { "id": "a", "text": "England, Scotland, Ireland, Wales" },
+                {
+                  "id": "b",
+                  "text": "England, Scotland, Wales, Northern Ireland"
+                },
+                { "id": "c", "text": "England, Scotland, Wales, France" },
+                { "id": "d", "text": "England, Britain, Ireland, Scotland" }
+              ],
+              "correctOptions": ["b"]
+            },
+            {
+              "questionId": "q2",
+              "order": 2,
+              "type": "multiple_choice",
+              "question": "What is the official currency of the UK?",
+              "options": [
+                { "id": "a", "text": "Euro" },
+                { "id": "b", "text": "Dollar" },
+                { "id": "c", "text": "British Pound (£)" },
+                { "id": "d", "text": "Yen" }
+              ],
+              "correctOptions": ["c"]
+            },
+            {
+              "questionId": "q3",
+              "order": 3,
+              "type": "multiple_choice",
+              "question": "How many pence are in one pound?",
+              "options": [
+                { "id": "a", "text": "10" },
+                { "id": "b", "text": "50" },
+                { "id": "c", "text": "100" },
+                { "id": "d", "text": "1,000" }
+              ],
+              "correctOptions": ["c"]
+            },
+            {
+              "questionId": "q4",
+              "order": 4,
+              "type": "multiple_choice",
+              "question": "Which of these is a British value?",
+              "options": [
+                { "id": "a", "text": "Tolerance" },
+                { "id": "b", "text": "Aggression" },
+                { "id": "c", "text": "Isolation" },
+                { "id": "d", "text": "Uniformity" }
+              ],
+              "correctOptions": ["a"]
+            },
+            {
+              "questionId": "q5",
+              "order": 5,
+              "type": "multiple_choice",
+              "question": "When do the clocks go forward for daylight savings?",
+              "options": [
+                { "id": "a", "text": "January" },
+                { "id": "b", "text": "March" },
+                { "id": "c", "text": "June" },
+                { "id": "d", "text": "October" }
+              ],
+              "correctOptions": ["b"]
+            },
+            {
+              "questionId": "q6",
+              "order": 6,
+              "type": "multiple_choice",
+              "question": "What should you do if you see a pregnant woman standing on public transport?",
+              "options": [
+                { "id": "a", "text": "Ignore them" },
+                { "id": "b", "text": "Offer your seat" },
+                { "id": "c", "text": "Ask them to move" },
+                { "id": "d", "text": "Nothing" }
+              ],
+              "correctOptions": ["b"]
+            }
+          ],
+          "createdAt": "2026-02-25T10:00:00Z",
+          "updatedAt": "2026-02-25T10:00:00Z"
         }
       ]
     },
-
     {
-      "id": "unit_3",
-      "title": "Your Journey to the UK",
-      "subtitle": "Travel & Arrival Guidance",
-      "order": 3,
-      "isLocked": true,
-      "progress": 0,
-
-      "sections": [
-        {
-          "id": "u3_s1",
-          "title": "Who Will Help You Travel",
-          "type": "text",
-          "slides": [
-            {
-              "id": "slide1",
-              "type": "text",
-              "content": "Your journey to the UK will be arranged by staff from IOM."
-            }
-          ]
-        }
-      ],
-
-      "quiz": [
-        {
-          "id": "q1",
-          "type": "true_false",
-          "question": "You should keep your IOM travel bag with you at all times.",
-          "correctAnswer": true
-        },
-        {
-          "id": "q2",
-          "type": "true_false",
-          "question": "Smoking is allowed on the plane.",
-          "correctAnswer": false
-        }
-      ]
+      "id": "UKCO_unit_3_en",
+      "appId": "UKCO",
+      "country": "UK",
+      "type": "unit",
+      "unitId": "unit_3",
+      "language": "en",
+      "title": "YOUR JOURNEY TO THE UK",
+      "slug": "your-journey-to-the-uk",
+      "displayOrder": 3,
+      "thumbnail": {
+        "mediaId": "media_unit2_thumb",
+        "url": "blob/UKCO/units/unit2/thumb.png",
+        "altText": "Introduction to the UK"
+      },
+      "estimatedDuration": 20,
+      "version": 1,
+      "status": "draft",
+      "isActive": false,
+      "createdAt": "2026-02-25T10:00:00Z",
+      "updatedAt": "2026-02-25T10:00:00Z",
+      "publishedAt": null,
+      "sections": []
     },
-
     {
-      "id": "unit_4",
-      "title": "Your First Few Weeks in the UK",
-      "subtitle": "Support, Independence, Services",
-      "order": 4,
-      "isLocked": true,
-      "progress": 0,
-
-      "sections": [
-        {
-          "id": "u4_s1",
-          "title": "Your Legal Status in the UK",
-          "type": "text",
-          "slides": [
-            {
-              "id": "slide1",
-              "type": "text",
-              "content": "When you arrive in the UK, you will have the legal right to stay."
-            }
-          ]
-        }
-      ],
-
-      "quiz": [
-        {
-          "id": "q1",
-          "type": "true_false",
-          "question": "Your eVisa is free of charge.",
-          "correctAnswer": true
-        },
-        {
-          "id": "q2",
-          "type": "true_false",
-          "question": "It is a criminal offence to use your phone while driving.",
-          "correctAnswer": true
-        }
-      ]
+      "id": "UKCO_unit_4_en",
+      "appId": "UKCO",
+      "country": "UK",
+      "type": "unit",
+      "unitId": "unit_4",
+      "language": "en",
+      "title": "YOUR FIRST FEW WEEKS IN THE UK",
+      "slug": "your-first-few-weeks-in-the-uk",
+      "displayOrder": 4,
+      "thumbnail": {
+        "mediaId": "media_unit2_thumb",
+        "url": "blob/UKCO/units/unit2/thumb.png",
+        "altText": "Introduction to the UK"
+      },
+      "estimatedDuration": 20,
+      "version": 1,
+      "status": "draft",
+      "isActive": false,
+      "createdAt": "2026-02-25T10:00:00Z",
+      "updatedAt": "2026-02-25T10:00:00Z",
+      "publishedAt": null,
+      "sections": []
     }
   ]
 }

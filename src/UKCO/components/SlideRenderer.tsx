@@ -26,7 +26,7 @@ export default function SlideRenderer({ slide, quize }: any) {
     );
   }
 
-  if (quize.type === 'single_choice') {
+  if (slide.type === 'single_choice') {
     return (
       <View>
         <Text>{slide.question}</Text>
@@ -39,7 +39,7 @@ export default function SlideRenderer({ slide, quize }: any) {
     );
   }
 
-  if (quize.type === 'single_choice') {
+  if (slide.type === 'single_choice') {
     return (
       <View>
         <Text>{slide.question}</Text>
@@ -52,7 +52,7 @@ export default function SlideRenderer({ slide, quize }: any) {
     );
   }
 
-  if (quize.type === 'true_false') {
+  if (slide.type === 'true_false') {
     return (
       <View>
         <Text>{slide.question}</Text>
