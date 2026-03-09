@@ -9,6 +9,7 @@ export default function SectionScreen({ route, navigation }: any) {
 
   return (
     <View style={{ flex: 1, padding: 20 }}>
+      {unit.sections&& unit.sections.length > 0 ? 
       <FlatList
         data={unit.sections}
         keyExtractor={(item) => item.sectionId}
@@ -26,7 +27,9 @@ export default function SectionScreen({ route, navigation }: any) {
             </Text>
           </TouchableOpacity>
         )}
-      />
+      />:
+      <Text>No sections available for this unit.</Text>
+      }
     </View>
   );
 }
