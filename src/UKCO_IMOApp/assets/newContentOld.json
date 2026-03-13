@@ -1,0 +1,1491 @@
+{
+  "appName": "UKCO Mobile Application",
+  "appConfig": {
+    "version": 1,
+    "language": "en",
+    "appId": "UKCO"
+  },
+  "units": [
+    {
+      "id": "UKCO_unit_1_en",
+      "appId": "UKCO",
+      "country": "UK",
+      "type": "unit",
+      "unitId": "unit_1",
+      "language": "en",
+      "title": "WELCOME TO THE UKCO APP",
+      "slug": "welcome-to-the-ukco-app",
+      "displayOrder": 1,
+      "thumbnail": {
+        "mediaId": "media_unit2_thumb",
+        "url": "welcome.jpg",
+        "altText": "Introduction to the UK"
+      },
+      "estimatedDuration": 20,
+      "version": 1,
+      "status": "draft",
+      "isActive": false,
+      "createdAt": "2026-02-25T10:00:00Z",
+      "updatedAt": "2026-02-25T10:00:00Z",
+      "publishedAt": null,
+      "sections": [
+        {
+          "sectionId": "sec_1",
+          "sectionType": "content",
+          "displayOrder": 1,
+          "title": "Welcome Message",
+          "status": "draft",
+          "sectionVersion": 1,
+          "isMandatory": true,
+          "content": [
+            {
+              "contentId": "sec1_c1",
+              "order": 1,
+              "type": "paragraph",
+              "text": "Welcome to the UK Cultural Orientation (UKCO) App."
+            },
+            {
+              "contentId": "sec1_c2",
+              "order": 2,
+              "type": "paragraph",
+              "text": "This app has been designed to help you prepare for life in the United Kingdom. Whether you are preparing to travel or have already arrived, the information in this app will help you feel more confident and informed."
+            }
+          ],
+          "createdAt": "2026-02-25T10:00:00Z",
+          "updatedAt": "2026-02-25T10:00:00Z"
+        },
+        {
+          "sectionId": "sec_2",
+          "sectionType": "content",
+          "displayOrder": 2,
+          "title": "What You Will Learn",
+          "status": "draft",
+          "sectionVersion": 1,
+          "isMandatory": true,
+          "content": [
+            {
+              "contentId": "sec2_c1",
+              "order": 1,
+              "type": "paragraph",
+              "text": "The app covers 10 topics to help you settle into life in the UK:"
+            },
+            {
+              "contentId": "sec2_c2",
+              "order": 2,
+              "type": "list",
+              "items": [
+                "Welcome to the UKCO App",
+                "Introduction to the UK",
+                "Your Journey to the UK",
+                "Your First Few Weeks in the UK",
+                "Housing",
+                "Employment and Benefits",
+                "Education",
+                "Rights and Responsibilities",
+                "Health and Wellbeing",
+                "Cultural Adaptation"
+              ]
+            },
+            {
+              "contentId": "sec2_c3",
+              "order": 3,
+              "type": "paragraph",
+              "text": "Each topic includes key information, helpful tips and a short quiz to test your understanding."
+            }
+          ],
+          "createdAt": "2026-02-25T10:00:00Z",
+          "updatedAt": "2026-02-25T10:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "UKCO_unit_2_en",
+      "appId": "UKCO",
+      "country": "UK",
+      "type": "unit",
+      "unitId": "unit_2",
+      "language": "en",
+      "title": "INTRODUCTION TO THE UK",
+      "slug": "introduction-to-the-uk",
+      "displayOrder": 2,
+      "thumbnail": {
+        "mediaId": "media_unit2_thumb",
+        "url": "introduction.png",
+        "altText": "Introduction to the UK"
+      },
+      "estimatedDuration": 20,
+      "version": 1,
+      "status": "draft",
+      "isActive": false,
+      "createdAt": "2026-02-25T10:00:00Z",
+      "updatedAt": "2026-02-25T10:00:00Z",
+      "publishedAt": null,
+      "sections": [
+        {
+          "sectionId": "sec_1",
+          "sectionType": "content",
+          "displayOrder": 1,
+          "title": "Location and Geography",
+          "status": "draft",
+          "sectionVersion": 1,
+          "isMandatory": true,
+          "content": [
+            {
+              "contentId": "sec1_c1",
+              "order": 1,
+              "type": "paragraph",
+              "text": "The United Kingdom (UK) is made up of four countries: England, Scotland, Wales and Northern Ireland. The UK is an island nation located off the northwestern coast of Europe."
+            },
+            {
+              "contentId": "sec1_c2",
+              "order": 2,
+              "type": "paragraph",
+              "text": "The UK mainland is about 870 miles (1,400 km) from north to south. The population is approximately 67.6 million people."
+            },
+            {
+              "contentId": "sec1_c3",
+              "order": 3,
+              "type": "list",
+              "title": "Each country has its own capital city:",
+              "items": [
+                "England: London",
+                "Scotland: Edinburgh",
+                "Wales: Cardiff",
+                "Northern Ireland: Belfast"
+              ]
+            },
+            {
+              "contentId": "sec1_c4",
+              "order": 4,
+              "type": "paragraph",
+              "text": "Other major cities include Manchester, Birmingham, Liverpool, Leeds, Bristol, Glasgow, Aberdeen, Swansea and Newport."
+            }
+          ],
+          "createdAt": "2026-02-25T10:00:00Z",
+          "updatedAt": "2026-02-25T10:00:00Z"
+        },
+        {
+          "sectionId": "sec_2",
+          "sectionType": "content",
+          "displayOrder": 2,
+          "title": "Languages",
+          "status": "draft",
+          "sectionVersion": 1,
+          "isMandatory": true,
+          "content": [
+            {
+              "contentId": "sec2_c1",
+              "order": 1,
+              "type": "paragraph",
+              "text": "English is the main language spoken in the UK. However, there are also regional languages:"
+            },
+            {
+              "contentId": "sec2_c2",
+              "order": 2,
+              "type": "list",
+              "items": [
+                "Welsh is spoken in Wales",
+                "Gaelic is spoken in parts of Scotland",
+                "Irish Gaelic is spoken in parts of Northern Ireland"
+              ]
+            },
+            {
+              "contentId": "sec2_c3",
+              "order": 3,
+              "type": "paragraph",
+              "text": "You will hear many different accents and dialects across the UK. Learning English is essential for settling into life in the UK."
+            }
+          ],
+          "createdAt": "2026-02-25T10:00:00Z",
+          "updatedAt": "2026-02-25T10:00:00Z"
+        },
+        {
+          "sectionId": "sec_3",
+          "sectionType": "content",
+          "displayOrder": 3,
+          "title": "Climate and Seasons",
+          "status": "draft",
+          "sectionVersion": 1,
+          "isMandatory": true,
+          "content": [
+            {
+              "contentId": "sec3_c1",
+              "order": 1,
+              "type": "paragraph",
+              "text": "The UK has a temperate climate with rainfall throughout the year. Temperatures rarely drop below -11°C or rise above 35°C."
+            },
+            {
+              "contentId": "sec3_c2",
+              "order": 2,
+              "type": "list",
+              "title": "Seasons in the UK:",
+              "items": [
+                "Spring (March - May): Often rainy, with flowers and trees blooming.",
+                "Summer (June - August): The warmest season with long sunny days and occasional thunderstorms.",
+                "Autumn (September - November): Days get colder, leaves fall from trees, and it can be wet and windy.",
+                "Winter (December - February): The coldest season with freezing temperatures, ice and sometimes snow."
+              ]
+            },
+            {
+              "contentId": "sec3_c3",
+              "order": 3,
+              "type": "paragraph",
+              "text": "Clocks go forward one hour in March and back one hour in October for daylight savings."
+            }
+          ],
+          "createdAt": "2026-02-25T10:00:00Z",
+          "updatedAt": "2026-02-25T10:00:00Z"
+        },
+        {
+          "sectionId": "sec_4",
+          "sectionType": "content",
+          "displayOrder": 4,
+          "title": "Holidays and Celebrations",
+          "status": "draft",
+          "sectionVersion": 1,
+          "isMandatory": true,
+          "content": [
+            {
+              "contentId": "sec4_c1",
+              "order": 1,
+              "type": "paragraph",
+              "text": "The UK has several public holidays (called Bank Holidays) when banks and many businesses are closed."
+            },
+            {
+              "contentId": "sec4_c2",
+              "order": 2,
+              "type": "list",
+              "items": [
+                "New Year’s Day (1 January)",
+                "Early May Bank Holiday",
+                "Late May/Early June Bank Holiday",
+                "August Bank Holiday",
+                "Christmas Day (25 December)",
+                "Boxing Day (26 December)"
+              ]
+            }
+          ],
+          "createdAt": "2026-02-25T10:00:00Z",
+          "updatedAt": "2026-02-25T10:00:00Z"
+        },
+        {
+          "sectionId": "sec_5",
+          "sectionType": "content",
+          "displayOrder": 5,
+          "title": "Government and Politics",
+          "status": "draft",
+          "sectionVersion": 1,
+          "isMandatory": true,
+          "content": [
+            {
+              "contentId": "sec5_c1",
+              "order": 1,
+              "type": "paragraph",
+              "text": "The UK is a constitutional monarchy and a parliamentary democracy."
+            },
+            {
+              "contentId": "sec5_c2",
+              "order": 2,
+              "type": "paragraph",
+              "text": "Head of State: King Charles III. Prime Minister: Sir Keir Starmer."
+            },
+            {
+              "contentId": "sec5_c3",
+              "order": 3,
+              "type": "paragraph",
+              "text": "Parliament has three parts: the King, the House of Lords and the House of Commons."
+            }
+          ],
+          "createdAt": "2026-02-25T10:00:00Z",
+          "updatedAt": "2026-02-25T10:00:00Z"
+        },
+        {
+          "sectionId": "sec_6",
+          "sectionType": "content",
+          "displayOrder": 6,
+          "title": "People and Culture",
+          "status": "draft",
+          "sectionVersion": 1,
+          "isMandatory": true,
+          "content": [
+            {
+              "contentId": "sec6_c1",
+              "order": 1,
+              "type": "list",
+              "title": "British values include:",
+              "items": ["Tolerance", "Fairness", "Respect"]
+            }
+          ],
+          "createdAt": "2026-02-25T10:00:00Z",
+          "updatedAt": "2026-02-25T10:00:00Z"
+        },
+        {
+          "sectionId": "sec_7",
+          "sectionType": "content",
+          "displayOrder": 7,
+          "title": "Religion",
+          "status": "draft",
+          "sectionVersion": 1,
+          "isMandatory": true,
+          "content": [
+            {
+              "contentId": "sec7_c1",
+              "order": 1,
+              "type": "paragraph",
+              "text": "The official religion is Christianity, but the UK is a multi-faith society. You are free to practise your religion."
+            }
+          ],
+          "createdAt": "2026-02-25T10:00:00Z",
+          "updatedAt": "2026-02-25T10:00:00Z"
+        },
+        {
+          "sectionId": "sec_8",
+          "sectionType": "content",
+          "displayOrder": 8,
+          "title": "Social Etiquette",
+          "status": "draft",
+          "sectionVersion": 1,
+          "isMandatory": true,
+          "content": [
+            {
+              "contentId": "sec8_c1",
+              "order": 1,
+              "type": "list",
+              "title": "Do:",
+              "items": [
+                "Queue and wait your turn",
+                "Say please, thank you and sorry",
+                "Be on time",
+                "Offer your seat to pregnant women, elderly or disabled people"
+              ]
+            }
+          ],
+          "createdAt": "2026-02-25T10:00:00Z",
+          "updatedAt": "2026-02-25T10:00:00Z"
+        },
+        {
+          "sectionId": "sec_9",
+          "sectionType": "content",
+          "displayOrder": 9,
+          "title": "UK Money",
+          "status": "draft",
+          "sectionVersion": 1,
+          "isMandatory": true,
+          "content": [
+            {
+              "contentId": "sec9_c1",
+              "order": 1,
+              "type": "paragraph",
+              "text": "The official currency is the British Pound (£), also called Pound Sterling. One pound equals 100 pence."
+            }
+          ],
+          "createdAt": "2026-02-25T10:00:00Z",
+          "updatedAt": "2026-02-25T10:00:00Z"
+        },
+        {
+          "sectionId": "quiz_sec",
+          "sectionType": "quiz",
+          "displayOrder": 999,
+          "title": "Test Your Knowledge",
+          "status": "draft",
+          "sectionVersion": 1,
+          "isMandatory": true,
+          "quizSettings": {
+            "requireFullCorrect": true,
+            "validationMode": "finalSubmission"
+          },
+          "questions": [
+            {
+              "questionId": "q1",
+              "order": 1,
+              "type": "multiple_choice",
+              "question": "What are the four countries that make up the United Kingdom?",
+              "options": [
+                { "id": "a", "text": "England, Scotland, Ireland, Wales" },
+                {
+                  "id": "b",
+                  "text": "England, Scotland, Wales, Northern Ireland"
+                },
+                { "id": "c", "text": "England, Scotland, Wales, France" },
+                { "id": "d", "text": "England, Britain, Ireland, Scotland" }
+              ],
+              "correctOptions": ["b", "a"]
+            },
+            {
+              "questionId": "q2",
+              "order": 2,
+              "type": "multiple_choice",
+              "question": "What is the official currency of the UK?",
+              "options": [
+                { "id": "a", "text": "Euro" },
+                { "id": "b", "text": "Dollar" },
+                { "id": "c", "text": "British Pound (£)" },
+                { "id": "d", "text": "Yen" }
+              ],
+              "correctOptions": ["c"]
+            },
+            {
+              "questionId": "q3",
+              "order": 3,
+              "type": "multiple_choice",
+              "question": "How many pence are in one pound?",
+              "options": [
+                { "id": "a", "text": "10" },
+                { "id": "b", "text": "50" },
+                { "id": "c", "text": "100" },
+                { "id": "d", "text": "1,000" }
+              ],
+              "correctOptions": ["c"]
+            },
+            {
+              "questionId": "q4",
+              "order": 4,
+              "type": "multiple_choice",
+              "question": "Which of these is a British value?",
+              "options": [
+                { "id": "a", "text": "Tolerance" },
+                { "id": "b", "text": "Aggression" },
+                { "id": "c", "text": "Isolation" },
+                { "id": "d", "text": "Uniformity" }
+              ],
+              "correctOptions": ["a"]
+            },
+            {
+              "questionId": "q5",
+              "order": 5,
+              "type": "multiple_choice",
+              "question": "When do the clocks go forward for daylight savings?",
+              "options": [
+                { "id": "a", "text": "January" },
+                { "id": "b", "text": "March" },
+                { "id": "c", "text": "June" },
+                { "id": "d", "text": "October" }
+              ],
+              "correctOptions": ["b"]
+            },
+            {
+              "questionId": "q6",
+              "order": 6,
+              "type": "multiple_choice",
+              "question": "What should you do if you see a pregnant woman standing on public transport?",
+              "options": [
+                { "id": "a", "text": "Ignore them" },
+                { "id": "b", "text": "Offer your seat" },
+                { "id": "c", "text": "Ask them to move" },
+                { "id": "d", "text": "Nothing" }
+              ],
+              "correctOptions": ["b"]
+            }
+          ],
+          "createdAt": "2026-02-25T10:00:00Z",
+          "updatedAt": "2026-02-25T10:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "UKCO_unit_3_en",
+      "appId": "UKCO",
+      "country": "UK",
+      "type": "unit",
+      "unitId": "unit_3",
+      "language": "en",
+      "title": "YOUR JOURNEY TO THE UK",
+      "slug": "your-journey-to-the-uk",
+      "displayOrder": 3,
+      "thumbnail": {
+        "mediaId": "media_unit2_thumb",
+        "url": "your-journey.png",
+        "altText": "Introduction to the UK"
+      },
+      "estimatedDuration": 20,
+      "version": 1,
+      "status": "draft",
+      "isActive": false,
+      "createdAt": "2026-02-25T10:00:00Z",
+      "updatedAt": "2026-02-25T10:00:00Z",
+      "publishedAt": null,
+      "sections": [
+        {
+          "sectionId": "sec_1",
+          "sectionType": "content",
+          "displayOrder": 1,
+          "title": "Who Will Help You Travel",
+          "status": "draft",
+          "sectionVersion": 1,
+          "isMandatory": true,
+          "content": [
+            {
+              "contentId": "sec1_c1",
+              "order": 1,
+              "type": "paragraph",
+              "text": "Your journey to the UK will be arranged by staff from the International Organization for Migration (IOM). IOM staff will guide you through every step of the travel process."
+            }
+          ],
+          "createdAt": "2026-02-25T10:00:00Z",
+          "updatedAt": "2026-02-25T10:00:00Z"
+        },
+        {
+          "sectionId": "sec_2",
+          "sectionType": "content",
+          "displayOrder": 2,
+          "title": "What to Pack",
+          "status": "draft",
+          "sectionVersion": 1,
+          "isMandatory": true,
+          "content": [
+            {
+              "contentId": "sec2_c1",
+              "order": 1,
+              "type": "paragraph",
+              "text": "You should think carefully about what to pack. Prioritise essential belongings and items with personal value."
+            },
+            {
+              "contentId": "sec2_c2",
+              "order": 3,
+              "type": "subtitle",
+              "text": "Do bring:"
+            },
+            {
+              "contentId": "sec2_c3",
+              "order": 3,
+              "type": "list",
+              "items": [
+                "Comfortable clothes for travelling",
+                "Warm clothes for UK weather (coat, hat, scarf, gloves)",
+                "Important documents (kept in your hand luggage)",
+                "Prescription medication and a doctor’s letter explaining what it is",
+                "A small amount of money",
+                "Items with sentimental value (photos, small keepsakes)",
+                "Baby supplies if needed (nappies, formula, bottles, change of clothes)"
+              ]
+            },
+            {
+              "contentId": "sec2_c4",
+              "order": 4,
+              "type": "subtitle",
+              "text": "Do NOT pack:"
+            },
+            {
+              "contentId": "sec2_c5",
+              "order": 5,
+              "type": "list",
+              "items": [
+                "Knives, scissors, sharp objects or weapons",
+                "Liquids over 100ml in hand luggage",
+                "Illegal drugs",
+                "Large amounts of cash without declaring it"
+              ]
+            },
+            {
+              "contentId": "sec2_c4",
+              "order": 4,
+              "type": "paragraph",
+              "text": "Each passenger is usually allowed one or two checked bags (approximately 23kg each) and one carry-on bag."
+            }
+          ],
+          "createdAt": "2026-02-25T10:00:00Z",
+          "updatedAt": "2026-02-25T10:00:00Z"
+        },
+        {
+          "sectionId": "sec_3",
+          "sectionType": "content",
+          "displayOrder": 3,
+          "title": "The IOM Travel Bag",
+          "status": "draft",
+          "sectionVersion": 1,
+          "isMandatory": true,
+          "content": [
+            {
+              "contentId": "sec3_c1",
+              "order": 1,
+              "type": "paragraph",
+              "text": "The UK has a temperate climate with rainfall throughout the year. Temperatures rarely drop below -11°C or rise above 35°C."
+            },
+            {
+              "contentId": "sec3_c2",
+              "order": 2,
+              "type": "list",
+              "title": "Seasons in the UK:",
+              "items": [
+                "Spring (March - May): Often rainy, with flowers and trees blooming.",
+                "Summer (June - August): The warmest season with long sunny days and occasional thunderstorms.",
+                "Autumn (September - November): Days get colder, leaves fall from trees, and it can be wet and windy.",
+                "Winter (December - February): The coldest season with freezing temperatures, ice and sometimes snow."
+              ]
+            },
+            {
+              "contentId": "sec3_c3",
+              "order": 3,
+              "type": "paragraph",
+              "text": "Clocks go forward one hour in March and back one hour in October for daylight savings."
+            }
+          ],
+          "createdAt": "2026-02-25T10:00:00Z",
+          "updatedAt": "2026-02-25T10:00:00Z"
+        },
+        {
+          "sectionId": "sec_4",
+          "sectionType": "content",
+          "displayOrder": 4,
+          "title": "Getting to the Airport",
+          "status": "draft",
+          "sectionVersion": 1,
+          "isMandatory": true,
+          "content": [
+            {
+              "contentId": "sec4_c1",
+              "order": 1,
+              "type": "paragraph",
+              "text": "The UK has several public holidays (called Bank Holidays) when banks and many businesses are closed."
+            },
+            {
+              "contentId": "sec4_c2",
+              "order": 2,
+              "type": "list",
+              "items": [
+                "New Year’s Day (1 January)",
+                "Early May Bank Holiday",
+                "Late May/Early June Bank Holiday",
+                "August Bank Holiday",
+                "Christmas Day (25 December)",
+                "Boxing Day (26 December)"
+              ]
+            }
+          ],
+          "createdAt": "2026-02-25T10:00:00Z",
+          "updatedAt": "2026-02-25T10:00:00Z"
+        },
+        {
+          "sectionId": "sec_5",
+          "sectionType": "content",
+          "displayOrder": 5,
+          "title": "At the Airport - Check-In",
+          "status": "draft",
+          "sectionVersion": 1,
+          "isMandatory": true,
+          "content": [
+            {
+              "contentId": "sec5_c1",
+              "order": 1,
+              "type": "paragraph",
+              "text": "The UK is a constitutional monarchy and a parliamentary democracy."
+            },
+            {
+              "contentId": "sec5_c2",
+              "order": 2,
+              "type": "paragraph",
+              "text": "Head of State: King Charles III. Prime Minister: Sir Keir Starmer."
+            },
+            {
+              "contentId": "sec5_c3",
+              "order": 3,
+              "type": "paragraph",
+              "text": "Parliament has three parts: the King, the House of Lords and the House of Commons."
+            }
+          ],
+          "createdAt": "2026-02-25T10:00:00Z",
+          "updatedAt": "2026-02-25T10:00:00Z"
+        },
+        {
+          "sectionId": "sec_6",
+          "sectionType": "content",
+          "displayOrder": 6,
+          "title": "On the Plane - Seating and Safety",
+          "status": "draft",
+          "sectionVersion": 1,
+          "isMandatory": true,
+          "content": [
+            {
+              "contentId": "sec6_c1",
+              "order": 1,
+              "type": "list",
+              "title": "British values include:",
+              "items": ["Tolerance", "Fairness", "Respect"]
+            }
+          ],
+          "createdAt": "2026-02-25T10:00:00Z",
+          "updatedAt": "2026-02-25T10:00:00Z"
+        },
+        {
+          "sectionId": "sec_7",
+          "sectionType": "On the Plane - Food and Drink",
+          "displayOrder": 7,
+          "title": "Religion",
+          "status": "draft",
+          "sectionVersion": 1,
+          "isMandatory": true,
+          "content": [
+            {
+              "contentId": "sec7_c1",
+              "order": 1,
+              "type": "paragraph",
+              "text": "The official religion is Christianity, but the UK is a multi-faith society. You are free to practise your religion."
+            }
+          ],
+          "createdAt": "2026-02-25T10:00:00Z",
+          "updatedAt": "2026-02-25T10:00:00Z"
+        },
+        {
+          "sectionId": "sec_8",
+          "sectionType": "content",
+          "displayOrder": 8,
+          "title": "On the Plane - Using the Toilet",
+          "status": "draft",
+          "sectionVersion": 1,
+          "isMandatory": true,
+          "content": [
+            {
+              "contentId": "sec8_c1",
+              "order": 1,
+              "type": "list",
+              "title": "Do:",
+              "items": [
+                "Queue and wait your turn",
+                "Say please, thank you and sorry",
+                "Be on time",
+                "Offer your seat to pregnant women, elderly or disabled people"
+              ]
+            }
+          ],
+          "createdAt": "2026-02-25T10:00:00Z",
+          "updatedAt": "2026-02-25T10:00:00Z"
+        },
+        {
+          "sectionId": "sec_9",
+          "sectionType": "content",
+          "displayOrder": 9,
+          "title": "Transit Stops",
+          "status": "draft",
+          "sectionVersion": 1,
+          "isMandatory": true,
+          "content": [
+            {
+              "contentId": "sec9_c1",
+              "order": 1,
+              "type": "paragraph",
+              "text": "The official currency is the British Pound (£), also called Pound Sterling. One pound equals 100 pence."
+            }
+          ],
+          "createdAt": "2026-02-25T10:00:00Z",
+          "updatedAt": "2026-02-25T10:00:00Z"
+        },
+        {
+          "sectionId": "sec_10",
+          "sectionType": "content",
+          "displayOrder": 10,
+          "title": "Arriving in the UK",
+          "status": "draft",
+          "sectionVersion": 1,
+          "isMandatory": true,
+          "content": [
+            {
+              "contentId": "sec10_c1",
+              "order": 1,
+              "type": "paragraph",
+              "text": "When you arrive in the UK, you will go through UK immigration (border control). You will need to show your travel documents from the IOM bag."
+            },
+            {
+              "contentId": "sec10_c2",
+              "order": 2,
+              "type": "paragraph",
+              "text": "Immigration officers may ask you questions. Answer calmly and honestly."
+            },
+            {
+              "contentId": "sec10_c3",
+              "order": 3,
+              "type": "paragraph",
+              "text": "After passing through immigration, collect your checked luggage from the baggage claim area."
+            },
+            {
+              "contentId": "sec10_c4",
+              "order": 4,
+              "type": "paragraph",
+              "text": "Someone will be waiting to meet you after you collect your luggage. They will take you to your accommodation."
+            }
+          ],
+          "createdAt": "2026-02-25T10:00:00Z",
+          "updatedAt": "2026-02-25T10:00:00Z"
+        },
+        {
+          "sectionId": "sec_11",
+          "sectionType": "content",
+          "displayOrder": 11,
+          "title": "What to Expect on Your Journey",
+          "status": "draft",
+          "sectionVersion": 1,
+          "isMandatory": true,
+          "content": [
+            {
+              "contentId": "sec11_c1",
+              "order": 1,
+              "type": "list",
+              "text": [
+                "Always keep your IOM bag with you",
+                "Keep your family together throughout the journey",
+                "If you feel unwell, tell IOM staff or cabin crew immediately",
+                "Take any medication you need in your hand luggage",
+                "If you get lost or separated, ask airport staff for help",
+                "Stay calm — people are there to help you"
+              ]
+            }
+          ],
+          "createdAt": "2026-02-25T10:00:00Z",
+          "updatedAt": "2026-02-25T10:00:00Z"
+        },
+        {
+          "sectionId": "quiz_sec",
+          "sectionType": "quiz",
+          "displayOrder": 1000,
+          "title": "Test Your Knowledge",
+          "status": "draft",
+          "sectionVersion": 1,
+          "isMandatory": true,
+          "quizSettings": {
+            "requireFullCorrect": true,
+            "validationMode": "finalSubmission"
+          },
+          "questions": [
+            {
+              "questionId": "q1",
+              "order": 1,
+              "type": "true_false",
+              "question": "You should put your IOM travel bag in your checked luggage.",
+              "correctAnswer": false,
+              "explanation": "Always keep the IOM bag with you in your hand luggage."
+            },
+            {
+              "questionId": "q2",
+              "order": 2,
+              "type": "true_false",
+              "question": "You must fasten your seat belt during take-off and landing.",
+              "correctAnswer": true
+            },
+            {
+              "questionId": "q3",
+              "order": 3,
+              "type": "true_false",
+              "question": "You are allowed to smoke on the plane.",
+              "correctAnswer": false,
+              "explanation": "Smoking (including e-cigarettes) is not allowed on any flight."
+            },
+            {
+              "questionId": "q4",
+              "order": 4,
+              "type": "single_choice",
+              "question": "What does the IOM bag contain?",
+              "options": [
+                { "id": "a", "text": "Snacks and water" },
+                {
+                  "id": "b",
+                  "text": "Travel documents, medical documents and important paperwork"
+                },
+                { "id": "c", "text": "Clothes and personal items" },
+                { "id": "d", "text": "Money and gifts" }
+              ],
+              "correctOptions": ["b"]
+            },
+            {
+              "questionId": "q5",
+              "order": 5,
+              "type": "true_false",
+              "question": "During a transit stop, you should leave the airport and explore.",
+              "correctAnswer": false,
+              "explanation": "Stay in the transit area and follow IOM staff instructions."
+            },
+            {
+              "questionId": "q6",
+              "order": 6,
+              "type": "multiple_choice",
+              "question": "What should you do if you feel unwell during the flight?",
+              "options": [
+                { "id": "a", "text": "Wait until you arrive" },
+                {
+                  "id": "b",
+                  "text": "Tell IOM staff or cabin crew immediately"
+                },
+                { "id": "c", "text": "Take someone else's medication" },
+                { "id": "d", "text": "Ignore it" }
+              ],
+              "correctOptions": ["b"]
+            },
+            {
+              "questionId": "q7",
+              "order": 7,
+              "type": "true_false",
+              "question": "You can bring liquids over 100ml in your hand luggage.",
+              "correctAnswer": false,
+              "explanation": "Liquids in hand luggage must be 100ml or less."
+            },
+            {
+              "questionId": "q8",
+              "order": 8,
+              "type": "true_false",
+              "question": "Someone will meet you at the UK airport when you arrive.",
+              "correctAnswer": true
+            }
+          ],
+          "createdAt": "2026-03-05T12:00:00Z",
+          "updatedAt": "2026-03-05T12:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "UKCO_unit_4_en",
+      "appId": "UKCO",
+      "country": "UK",
+      "type": "unit",
+      "unitId": "unit_4",
+      "language": "en",
+      "title": "YOUR FIRST FEW WEEKS IN THE UK",
+      "slug": "your-first-few-weeks-in-the-uk",
+      "displayOrder": 4,
+      "thumbnail": {
+        "mediaId": "media_unit2_thumb",
+        "url": "first-weeks.png",
+        "altText": "Introduction to the UK"
+      },
+      "estimatedDuration": 20,
+      "version": 1,
+      "status": "draft",
+      "isActive": false,
+      "createdAt": "2026-02-25T10:00:00Z",
+      "updatedAt": "2026-02-25T10:00:00Z",
+      "publishedAt": null,
+      "sections": [
+        {
+          "sectionId": "sec_1",
+          "sectionType": "content",
+          "displayOrder": 1,
+          "title": "Your Legal Status in the UK",
+          "status": "draft",
+          "sectionVersion": 1,
+          "isMandatory": true,
+          "content": [
+            {
+              "contentId": "sec1_c1",
+              "order": 1,
+              "type": "paragraph",
+              "text": "When you arrive in the UK, you will have the legal right to stay. This means that:"
+            },
+            {
+              "contentId": "sec1_c2",
+              "order": 2,
+              "type": "list",
+              "items": [
+                "You can access public services such as healthcare and schools",
+                "You have the right to work and can look for work as soon as you arrive",
+                "You can apply for benefits (financial support from the government) to cover your basic living costs until you find work",
+                "You can apply for British citizenship in the future under existing rules"
+              ]
+            }
+          ]
+        },
+        {
+          "sectionId": "sec_2",
+          "sectionType": "content",
+          "displayOrder": 2,
+          "title": "Your eVisa",
+          "status": "draft",
+          "sectionVersion": 1,
+          "isMandatory": true,
+          "content": [
+            {
+              "contentId": "sec2_c1",
+              "order": 1,
+              "type": "paragraph",
+              "text": "After you arrive in the UK, you will be supported to access your eVisa. This is done through an online UKVI (UK Visas and Immigration) account, which will be set up for you by the UK Home Office. Every member of your family receives an eVisa, including children and babies. Your eVisa is free of charge."
+            },
+            {
+              "contentId": "sec2_c2",
+              "order": 2,
+              "type": "paragraph",
+              "text": "Your eVisa is very important. It is evidence of your identity and legal status in the UK. You will need your eVisa to access benefits, the NHS (National Health Service) and other services."
+            },
+            {
+              "contentId": "sec2_c3",
+              "order": 3,
+              "type": "paragraph",
+              "text": "Unlike a physical document, an eVisa cannot be lost, damaged or stolen. You must keep access to your UKVI account safe and secure."
+            }
+          ]
+        },
+        {
+          "sectionId": "sec_3",
+          "sectionType": "content",
+          "displayOrder": 3,
+          "title": "Support When You Arrive",
+          "status": "draft",
+          "sectionVersion": 1,
+          "isMandatory": true,
+          "content": [
+            {
+              "contentId": "sec3_c1",
+              "order": 1,
+              "type": "paragraph",
+              "text": "When you arrive in the UK, you will have support to help you settle in. Someone will meet you at the airport and take you to your accommodation. You will not have to pay for transport."
+            },
+            {
+              "contentId": "sec3_c2",
+              "order": 2,
+              "type": "paragraph",
+              "text": "If your flight arrives late in the evening, you may be accommodated overnight, and food and drinks will be provided."
+            },
+            {
+              "contentId": "sec3_c3",
+              "order": 3,
+              "type": "subtitle",
+              "text": "Your support network will help you to:"
+            },
+            {
+              "contentId": "sec3_c4",
+              "order": 4,
+              "type": "list",
+              "items": [
+                "Settle into your accommodation",
+                "Access your eVisa",
+                "Open a bank account",
+                "Register children and teenagers at local schools or college",
+                "Register adults at English language and literacy classes",
+                "Register with a local GP (doctor) and dentist",
+                "Understand UK money and how to budget",
+                "Apply for benefits (financial support)",
+                "Find places to shop, places of worship, schools, parks and public transport",
+                "Access mental health services if needed",
+                "Apply for jobs (though they cannot give you a job directly)"
+              ]
+            }
+          ]
+        },
+        {
+          "sectionId": "sec_4",
+          "sectionType": "content",
+          "displayOrder": 4,
+          "title": "Becoming Independent",
+          "status": "draft",
+          "sectionVersion": 1,
+          "isMandatory": true,
+          "content": [
+            {
+              "contentId": "sec4_c1",
+              "order": 1,
+              "type": "paragraph",
+              "text": "The people supporting you will not be available at all times. You will need to start managing some things on your own."
+            },
+            {
+              "contentId": "sec4_c2",
+              "order": 2,
+              "type": "paragraph",
+              "text": "During working hours (Monday to Friday), your support contacts will be available to help. Outside of these hours, you may need to handle some things yourself."
+            },
+            {
+              "contentId": "sec4_c3",
+              "order": 3,
+              "type": "subtitle",
+              "text": "It is important to:"
+            },
+            {
+              "contentId": "sec4_c4",
+              "order": 4,
+              "type": "list",
+              "items": [
+                "Ask questions whenever you are unsure about something",
+                "Tell your support contacts if you have any concerns or worries",
+                "Start learning English as soon as possible - this is the most important step towards independence"
+              ]
+            }
+          ]
+        },
+        {
+          "sectionId": "sec_5",
+          "sectionType": "content",
+          "displayOrder": 5,
+          "title": "Getting Around - Public Transport",
+          "status": "draft",
+          "sectionVersion": 1,
+          "isMandatory": true,
+          "content": [
+            {
+              "contentId": "sec5_c1",
+              "order": 1,
+              "type": "paragraph",
+              "text": "There are extensive train, bus and tram services across the UK. Public transport is safe and used by everyone, regardless of age and gender."
+            },
+            {
+              "contentId": "sec5_c2",
+              "order": 2,
+              "type": "paragraph",
+              "text": "Taxis are available but more expensive. Many people use apps like Uber or Bolt to book a ride."
+            },
+            {
+              "contentId": "sec5_c3",
+              "order": 3,
+              "type": "paragraph",
+              "text": "Your support network will help you understand local public transport. Tips for saving money:"
+            },
+            {
+              "contentId": "sec5_c4",
+              "order": 4,
+              "type": "list",
+              "items": [
+                "Take a bus rather than a train",
+                "Buy a weekly or monthly ticket instead of individual tickets",
+                "Use a pre-paid card or contactless bank card to pay"
+              ]
+            },
+            {
+              "contentId": "sec5_c5",
+              "order": 5,
+              "type": "paragraph",
+              "text": "You must always pay for a ticket for your entire journey. If you do not, you could receive a fine."
+            }
+          ]
+        },
+        {
+          "sectionId": "sec_6",
+          "sectionType": "content",
+          "displayOrder": 6,
+          "title": "Getting Around - Cycling",
+          "status": "draft",
+          "sectionVersion": 1,
+          "isMandatory": true,
+          "content": [
+            {
+              "contentId": "sec6_c1",
+              "order": 1,
+              "type": "paragraph",
+              "text": "Cycling is a popular and affordable way to get around. In some areas, you can hire bikes."
+            },
+            {
+              "contentId": "sec6_c2",
+              "order": 2,
+              "type": "paragraph",
+              "text": "If you cycle, remember:"
+            },
+            {
+              "contentId": "sec6_c3",
+              "order": 3,
+              "type": "list",
+              "items": [
+                "Wear a cycle helmet that fits correctly",
+                "Wear bright or reflective clothing so others can see you",
+                "Use cycle lanes and cycle tracks where available"
+              ]
+            }
+          ]
+        },
+        {
+          "sectionId": "sec_7",
+          "sectionType": "content",
+          "displayOrder": 7,
+          "title": "Getting Around - Driving",
+          "status": "draft",
+          "sectionVersion": 1,
+          "isMandatory": true,
+          "content": [
+            {
+              "contentId": "sec7_c1",
+              "order": 1,
+              "type": "paragraph",
+              "text": "To drive a car in the UK, you must have:"
+            },
+            {
+              "contentId": "sec7_c2",
+              "order": 2,
+              "type": "list",
+              "text": [
+                "A valid driving licence",
+                "Car insurance",
+                "A fully registered car with a valid MOT and up-to-date vehicle tax"
+              ]
+            },
+            {
+              "contentId": "sec7_c3",
+              "order": 3,
+              "type": "paragraph",
+              "text": "Important rules:"
+            },
+            {
+              "contentId": "sec7_c4",
+              "order": 4,
+              "type": "list",
+              "items": [
+                "All passengers must wear seat belts",
+                "Children must travel in the correct child safety seat",
+                "It is a criminal offence to use your mobile phone while driving",
+                "Driving without a licence, insurance, or proper vehicle tax is a criminal offence"
+              ]
+            },
+            {
+              "contentId": "sec7_c5",
+              "order": 5,
+              "type": "paragraph",
+              "text": "You can drive on your existing licence for 12 months. After that, you must pass UK theory and practical tests (in English only; voiceover available for reading difficulties)."
+            },
+            {
+              "contentId": "sec7_c6",
+              "order": 6,
+              "type": "paragraph",
+              "text": "Buying and insuring a car is expensive. Public transport is often cheaper."
+            }
+          ]
+        },
+        {
+          "sectionId": "sec_8",
+          "sectionType": "content",
+          "displayOrder": 8,
+          "title": "Places of Worship",
+          "status": "draft",
+          "sectionVersion": 1,
+          "isMandatory": true,
+          "content": [
+            {
+              "contentId": "sec8_c1",
+              "order": 1,
+              "type": "paragraph",
+              "text": "The UK is a multi-faith society. There are mosques, churches, synagogues, temples and other places of worship."
+            },
+            {
+              "contentId": "sec8_c2",
+              "order": 2,
+              "type": "paragraph",
+              "text": "Your support network will help you find local places of worship. If there is none for your faith nearby, they can help you find a community prayer space and a faith leader."
+            },
+            {
+              "contentId": "sec8_c3",
+              "order": 3,
+              "type": "paragraph",
+              "text": "Many resettled people have found support, friendship and community through their place of worship."
+            }
+          ]
+        },
+        {
+          "sectionId": "sec_9",
+          "sectionType": "content",
+          "displayOrder": 9,
+          "title": "Learning English",
+          "status": "draft",
+          "sectionVersion": 1,
+          "isMandatory": true,
+          "content": [
+            {
+              "contentId": "sec9_c1",
+              "order": 1,
+              "type": "paragraph",
+              "text": "Learning and speaking English is key to integration and will help you:"
+            },
+            {
+              "contentId": "sec9_c2",
+              "order": 2,
+              "type": "list",
+              "items": [
+                "Find work",
+                "Make friends and community connections",
+                "Access healthcare and other services",
+                "Support your children’s education",
+                "Understand UK culture and customs",
+                "Become independent more quickly"
+              ]
+            },
+            {
+              "contentId": "sec9_c3",
+              "order": 3,
+              "type": "paragraph",
+              "text": "The British Council offers free tools:"
+            },
+            {
+              "contentId": "sec9_c4",
+              "order": 4,
+              "type": "list",
+              "items": [
+                "LearnEnglish (adults): learnenglish.britishcouncil.org",
+                "LearnEnglish Kids: learnenglishkids.britishcouncil.org",
+                "LearnEnglish Teens: learnenglishteens.britishcouncil.org"
+              ]
+            },
+            {
+              "contentId": "sec9_c5",
+              "order": 5,
+              "type": "paragraph",
+              "text": "Your support network will help you register for local English classes."
+            }
+          ]
+        },
+        {
+          "sectionId": "sec_10",
+          "sectionType": "content",
+          "displayOrder": 10,
+          "title": "UK Education System",
+          "status": "draft",
+          "sectionVersion": 1,
+          "isMandatory": true,
+          "content": [
+            {
+              "contentId": "sec10_c1",
+              "order": 1,
+              "type": "paragraph",
+              "text": "Education for children is free and compulsory in the UK:"
+            },
+            {
+              "contentId": "sec10_c2",
+              "order": 2,
+              "type": "list",
+              "items": [
+                "England, Wales and Scotland: ages 5 to 16",
+                "Northern Ireland: ages 4 to 16",
+                "England: ages 16 to 18 must continue in education or training"
+              ]
+            },
+            {
+              "contentId": "sec10_c3",
+              "order": 3,
+              "type": "paragraph",
+              "text": "After 16, options include college, vocational courses, apprenticeships and university."
+            },
+            {
+              "contentId": "sec10_c4",
+              "order": 4,
+              "type": "paragraph",
+              "text": "You are responsible for ensuring your children attend school every day. Not doing so can result in a fine."
+            },
+            {
+              "contentId": "sec10_c5",
+              "order": 5,
+              "type": "paragraph",
+              "text": "In Scotland, university tuition is free (subject to entry requirements). Elsewhere, student loans are available."
+            }
+          ]
+        },
+        {
+          "sectionId": "sec_11",
+          "sectionType": "content",
+          "displayOrder": 11,
+          "title": "Can My Family Join Me in the UK?",
+          "status": "draft",
+          "sectionVersion": 1,
+          "isMandatory": true,
+          "content": [
+            {
+              "contentId": "sec11_c1",
+              "order": 1,
+              "type": "paragraph",
+              "text": "If you have been resettled without some family members, it is important to understand:"
+            },
+            {
+              "contentId": "sec11_c2",
+              "order": 2,
+              "type": "list",
+              "items": [
+                "Resettlement places are very limited globally. The likelihood of additional family members being identified is unfortunately very low.",
+                "UK Family Reunion rules allow spouses (if married before arrival) and dependent children under 18 to apply. In exceptional circumstances, others may qualify.",
+                "There is no guarantee that other family members will be able to join you."
+              ]
+            },
+            {
+              "contentId": "sec11_c3",
+              "order": 3,
+              "type": "paragraph",
+              "text": "If you find it difficult to be separated from your family, please speak with your support network for help."
+            },
+            {
+              "contentId": "sec11_c4",
+              "order": 4,
+              "type": "paragraph",
+              "text": "If family members outside the UK have safety concerns, they should contact their nearest UNHCR office."
+            }
+          ]
+        },
+        {
+          "sectionId": "quiz_sec",
+          "sectionType": "quiz",
+          "displayOrder": 1001,
+          "title": "Test Your Knowledge",
+          "status": "draft",
+          "sectionVersion": 1,
+          "isMandatory": true,
+          "quizSettings": {
+            "requireFullCorrect": true,
+            "validationMode": "finalSubmission"
+          },
+          "questions": [
+            {
+              "questionId": "q1",
+              "order": 1,
+              "type": "true_false",
+              "question": "Your eVisa is free of charge and every family member will receive one.",
+              "correctAnswer": true
+            },
+            {
+              "questionId": "q2",
+              "order": 2,
+              "type": "true_false",
+              "question": "Your support network will give you a job when you arrive.",
+              "correctAnswer": false,
+              "explanation": "Finding work is your responsibility, but your support network will help with applications."
+            },
+            {
+              "questionId": "q3",
+              "order": 3,
+              "type": "true_false",
+              "question": "It is cheap and easy to buy a car and get insurance in the UK.",
+              "correctAnswer": false,
+              "explanation": "Buying and insuring a car is expensive. Public transport is often cheaper."
+            },
+            {
+              "questionId": "q4",
+              "order": 4,
+              "type": "true_false",
+              "question": "You must wear a seat belt when travelling in a car.",
+              "correctAnswer": true
+            },
+            {
+              "questionId": "q5",
+              "order": 5,
+              "type": "true_false",
+              "question": "Once in the UK, you cannot leave or travel to other countries.",
+              "correctAnswer": false,
+              "explanation": "You can leave once you have your eVisa and travel document. Travelling to your country of origin could affect your status."
+            },
+            {
+              "questionId": "q6",
+              "order": 6,
+              "type": "true_false",
+              "question": "Your rights to access public services will differ from UK citizens.",
+              "correctAnswer": false,
+              "explanation": "You will have the same rights and benefits as people already living in the UK."
+            },
+            {
+              "questionId": "q7",
+              "order": 7,
+              "type": "true_false",
+              "question": "The UK is a multi-faith society with places of worship you are welcome to attend.",
+              "correctAnswer": true
+            },
+            {
+              "questionId": "q8",
+              "order": 8,
+              "type": "true_false",
+              "question": "Learning English is important for finding work and becoming independent.",
+              "correctAnswer": true
+            },
+            {
+              "questionId": "q9",
+              "order": 9,
+              "type": "true_false",
+              "question": "Education for children in the UK is free and compulsory.",
+              "correctAnswer": true
+            },
+            {
+              "questionId": "q10",
+              "order": 10,
+              "type": "true_false",
+              "question": "It is a criminal offence to use your mobile phone while driving.",
+              "correctAnswer": true
+            }
+          ],
+          "createdAt": "2026-03-05T10:00:00Z",
+          "updatedAt": "2026-03-05T10:00:00Z"
+        }
+      ]
+    }
+  ]
+}

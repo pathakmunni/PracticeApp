@@ -1,0 +1,1820 @@
+{
+  "appName": "UKCO Mobile Application",
+  "appConfig": {
+    "version": 1,
+    "language": "en",
+    "appId": "UKCO"
+  },
+  "units": [
+    {
+      "id": "UKCO_unit_1_en",
+      "appId": "UKCO",
+      "country": "UK",
+      "type": "unit",
+      "unitId": "unit_1",
+      "language": "en",
+      "title": "WELCOME TO THE UKCO APP",
+      "slug": "welcome-to-the-ukco-app",
+      "displayOrder": 1,
+      "thumbnail": {
+        "mediaId": "media_unit2_thumb",
+        "url": "welcome.jpg",
+        "altText": "Introduction to the UK"
+      },
+      "estimatedDuration": 20,
+      "version": 1,
+      "status": "draft",
+      "isActive": false,
+      "createdAt": "2026-02-25T10:00:00Z",
+      "updatedAt": "2026-02-25T10:00:00Z",
+      "publishedAt": null,
+      "sections": []
+    },
+    {
+      "id": "UKCO_unit_2_en",
+      "appId": "UKCO",
+      "country": "UK",
+      "type": "unit",
+      "unitId": "unit_2",
+      "language": "en",
+      "title": "INTRODUCTION TO THE UK",
+      "slug": "introduction-to-the-uk",
+      "displayOrder": 2,
+      "thumbnail": {
+        "mediaId": "media_unit2_thumb",
+        "url": "introduction.png",
+        "altText": "Introduction to the UK"
+      },
+      "estimatedDuration": 20,
+      "version": 1,
+      "status": "draft",
+      "isActive": false,
+      "createdAt": "2026-03-01T10:00:00Z",
+      "updatedAt": "2026-03-01T10:00:00Z",
+      "publishedAt": null,
+      "sections": [
+        {
+          "sectionId": "sec_1",
+          "sectionType": "Carousel Slide",
+          "displayOrder": 1,
+          "title": "The United Kingdom",
+          "status": "draft",
+          "sectionVersion": 1,
+          "isMandatory": true,
+          "content": [
+            {
+              "contentId": "sec1_c1",
+              "order": 1,
+              "type": "paragraph",
+              "text": "The United Kingdom (UK) is made up of four countries: England, Scotland, Wales and Northern Ireland.",
+              "thumbnail": {
+                "mediaId": "uk_map_countries",
+                "url": "uk_map_countries.png",
+                "altText": "Map of the UK showing the four countries"
+              }
+            },
+            {
+              "contentId": "sec1_c2",
+              "order": 2,
+              "type": "list",
+              "title": "Each country has its own capital city:",
+              "items": [
+                "England – London",
+                "Scotland – Edinburgh",
+                "Wales – Cardiff",
+                "Northern Ireland – Belfast"
+              ],
+              "thumbnail": {
+                "mediaId": "uk_capitals",
+                "url": "uk_capitals.png",
+                "altText": "Capital cities of the UK"
+              }
+            },
+            {
+              "contentId": "sec1_c3",
+              "order": 3,
+              "type": "paragraph",
+              "text": "Other major cities include Manchester, Birmingham, Liverpool, Leeds, Bristol, Glasgow, Aberdeen, Swansea and Newport.",
+              "thumbnail": {
+                "mediaId": "uk_major_cities",
+                "url": "uk_major_cities.png",
+                "altText": "Major cities of the UK"
+              }
+            },
+            {
+              "contentId": "sec1_c4",
+              "order": 4,
+              "type": "paragraph",
+              "text": "The UK is an island nation located off the northwestern coast of Europe. The mainland is about 870 miles (1,400 km) from north to south with a population of approximately 67.6 million people.",
+              "thumbnail": {
+                "mediaId": "uk_europe_location",
+                "url": "uk_europe_location.png",
+                "altText": "UK location relative to Europe"
+              }
+            }
+          ],
+          "createdAt": "2026-03-01T10:00:00Z",
+          "updatedAt": "2026-03-01T10:00:00Z"
+        },
+        {
+          "sectionId": "sec_2",
+          "sectionType": "Image-Based Exploration",
+          "displayOrder": 2,
+          "title": "Languages",
+          "status": "draft",
+          "sectionVersion": 1,
+          "isMandatory": true,
+          "content": [
+            {
+              "contentId": "sec2_c1",
+              "order": 1,
+              "type": "paragraph",
+              "text": "English is the main language spoken in the UK. Welsh is spoken in Wales, Gaelic in parts of Scotland and Irish Gaelic in parts of Northern Ireland.",
+              "thumbnail": {
+                "mediaId": "languages",
+                "url": "languages.png",
+                "altText": "Different languages spoken in the UK"
+              }
+            },
+            {
+              "contentId": "sec2_c2",
+              "order": 2,
+              "type": "paragraph",
+              "text": "You will hear many different accents and dialects across the UK. Learning English is essential for settling into life in the UK.",
+              "thumbnail": {
+                "mediaId": "conversation_people",
+                "url": "conversation_people.png",
+                "altText": "People talking"
+              }
+            }
+          ],
+          "createdAt": "2026-03-01T10:00:00Z",
+          "updatedAt": "2026-03-01T10:00:00Z"
+        },
+        {
+          "sectionId": "sec_3",
+          "sectionType": "Carousel Slide",
+          "displayOrder": 3,
+          "title": "Climate and Seasons",
+          "status": "draft",
+          "sectionVersion": 1,
+          "isMandatory": true,
+          "content": [
+            {
+              "contentId": "sec3_c1",
+              "order": 1,
+              "type": "paragraph",
+              "text": "Spring (March-May): Often rainy, with flowers and trees blooming. Days start getting longer and warmer.",
+              "thumbnail": {
+                "mediaId": "spring",
+                "url": "spring.png",
+                "altText": "Spring in the UK"
+              }
+            },
+            {
+              "contentId": "sec3_c2",
+              "order": 2,
+              "type": "paragraph",
+              "text": "Summer (June-August): The warmest season with long sunny days and occasional thunderstorms.",
+              "thumbnail": {
+                "mediaId": "summer",
+                "url": "summer.png",
+                "altText": "Summer in the UK"
+              }
+            },
+            {
+              "contentId": "sec3_c3",
+              "order": 3,
+              "type": "paragraph",
+              "text": "Autumn (September-November): Days get colder, leaves fall from trees, and it can be wet and windy.",
+              "thumbnail": {
+                "mediaId": "autumn",
+                "url": "autumn.png",
+                "altText": "Autumn in the UK"
+              }
+            },
+            {
+              "contentId": "sec3_c4",
+              "order": 4,
+              "type": "paragraph",
+              "text": "Winter (December-February): The coldest season with freezing temperatures, ice and sometimes snow. You will need warm clothing - layers, a thick coat, scarf, hat and gloves.",
+              "thumbnail": {
+                "mediaId": "winter",
+                "url": "winter.png",
+                "altText": "Winter in the UK"
+              }
+            },
+            {
+              "contentId": "sec3_c5",
+              "order": 5,
+              "type": "paragraph",
+              "text": "Daylight savings: Clocks go forward one hour in March and back one hour in October.",
+              "thumbnail": {
+                "mediaId": "daylight_savings",
+                "url": "Daylight.png",
+                "altText": "Daylight savings in the UK"
+              }
+            }
+          ],
+          "createdAt": "2026-03-01T10:00:00Z",
+          "updatedAt": "2026-03-01T10:00:00Z"
+        },
+        {
+          "sectionId": "sec_4",
+          "sectionType": "Carousel Slide",
+          "displayOrder": 4,
+          "title": "Holidays and Celebrations",
+          "status": "draft",
+          "sectionVersion": 1,
+          "isMandatory": true,
+          "content": [
+            {
+              "contentId": "sec4_c1",
+              "order": 1,
+              "type": "paragraph",
+              "text": "The UK has public holidays called Bank Holidays when banks and many businesses are closed. Key holidays include New Year’s Day, Early May Bank Holiday, August Bank Holiday, Christmas Day and Boxing Day.",
+              "thumbnail": {
+                "mediaId": "holiday",
+                "url": "holiday.png",
+                "altText": "Holidays in the UK"
+              }
+            },
+            {
+              "contentId": "sec4_c2",
+              "order": 2,
+              "type": "paragraph",
+              "text": "Each of the four countries may also have its own holidays, such as St. Andrew’s Day in Scotland.",
+              "thumbnail": {
+                "mediaId": "holiday_scotland",
+                "url": "holiday_scotland.png",
+                "altText": "Holidays in Scotland"
+              }
+            }
+          ],
+          "createdAt": "2026-03-01T10:00:00Z",
+          "updatedAt": "2026-03-01T10:00:00Z"
+        },
+        {
+          "sectionId": "sec_5",
+          "sectionType": "Image with Tappable Dots",
+          "displayOrder": 5,
+          "title": "Government and Politics",
+          "status": "draft",
+          "sectionVersion": 1,
+          "isMandatory": true,
+          "content": [
+            {
+              "contentId": "sec5_c1",
+              "order": 1,
+              "type": "paragraph",
+              "text": "The UK is a constitutional monarchy and a parliamentary democracy. Tap each dot to learn more.",
+              "thumbnail": {
+                "mediaId": "parliament",
+                "url": "parliament.png",
+                "altText": "UK Parliament"
+              }
+            }
+          ],
+          "interactiveDots": [
+            {
+              "dotId": "dot1",
+              "order": 1,
+              "title": "Head of State",
+              "text": "The Head of State is King Charles III. The monarch’s role is largely ceremonial.",
+              "position": {
+                "x": 20,
+                "y": 30
+              }
+            },
+            {
+              "dotId": "dot2",
+              "order": 2,
+              "title": "Prime Minister",
+              "text": "The Prime Minister leads the government. Kier Starmer is the current Prime Minister. Members of Parliament (MPs) are elected by citizens to represent them.",
+              "position": {
+                "x": 45,
+                "y": 50
+              }
+            },
+            {
+              "dotId": "dot3",
+              "order": 3,
+              "title": "Parliament",
+              "text": "Parliament has three parts: the King, the House of Lords and the House of Commons. Elections must be held at least every five years.",
+              "position": {
+                "x": 70,
+                "y": 80
+              }
+            },
+            {
+              "dotId": "dot4",
+              "order": 4,
+              "title": "The Union Jack",
+              "text": "The UK flag is called the Union Jack. It combines the crosses of Saint George (England), Saint Andrew (Scotland) and Saint Patrick (Ireland).",
+              "position": {
+                "x": 40,
+                "y": 90
+              }
+            }
+          ],
+          "createdAt": "2026-03-01T10:00:00Z",
+          "updatedAt": "2026-03-01T10:00:00Z"
+        },
+        {
+          "sectionId": "sec_6",
+          "sectionType": "Carousel Slide",
+          "displayOrder": 6,
+          "title": "People, Culture and Values",
+          "content": [
+            {
+              "contentId": "sec6_c1",
+              "order": 1,
+              "type": "paragraph",
+              "text": "Britain is a multicultural, diverse society, especially in larger towns and cities.",
+              "thumbnail": {
+                "mediaId": "diversity",
+                "url": "diversity.png",
+                "altText": "Diversity in the UK"
+              }
+            },
+            {
+              "contentId": "sec6_c2",
+              "order": 2,
+              "type": "paragraph",
+              "text": "British values include tolerance (respect for everyone), fairness (treating people equally) and respect (for different views, religions and ways of life).",
+              "thumbnail": {
+                "mediaId": "values",
+                "url": "values.png",
+                "altText": "Values in the UK"
+              }
+            },
+            {
+              "contentId": "sec6_c3",
+              "order": 3,
+              "type": "paragraph",
+              "text": "Men and women are treated equally. You are expected to be tolerant and respectful of others.",
+              "thumbnail": {
+                "mediaId": "equality",
+                "url": "equality.png",
+                "altText": "Equality in the UK"
+              }
+            }
+          ],
+          "createdAt": "2026-03-01T10:00:00Z",
+          "updatedAt": "2026-03-01T10:00:00Z"
+        },
+        {
+          "sectionId": "sec_7",
+          "sectionType": "Image-Based Exploration",
+          "displayOrder": 7,
+          "title": "Religion",
+          "content": [
+            {
+              "contentId": "sec7_c1",
+              "order": 1,
+              "type": "paragraph",
+              "text": "The official religion is Christianity, but the UK is a multi-faith society. You are free to practise your religion.",
+              "thumbnail": {
+                "mediaId": "religion",
+                "url": "religion.png",
+                "altText": "Religion in the UK"
+              }
+            },
+            {
+              "contentId": "sec7_c2",
+              "order": 2,
+              "type": "paragraph",
+              "text": "Many towns and cities have mosques, churches, synagogues, temples and other places of worship. People of all faiths and no faith respect each other’s beliefs.",
+              "thumbnail": {
+                "mediaId": "places_of_worship",
+                "url": "places_of_worship.png",
+                "altText": "Places of worship in the UK"
+              }
+            }
+          ],
+          "createdAt": "2026-03-01T10:00:00Z",
+          "updatedAt": "2026-03-01T10:00:00Z"
+        },
+        {
+          "sectionId": "sec_8",
+          "sectionType": "Image with Tappable Dots",
+          "displayOrder": 8,
+          "title": "Social Etiquette",
+          "status": "draft",
+          "sectionVersion": 1,
+          "isMandatory": true,
+          "content": [
+            {
+              "contentId": "sec8_c1",
+              "order": 1,
+              "type": "paragraph",
+              "text": "British social etiquette may be different from what you are used to. Tap each dot to learn the key dos and don’ts.",
+              "thumbnail": {
+                "mediaId": "parliament",
+                "url": "parliament.png",
+                "altText": "UK Parliament"
+              }
+            }
+          ],
+          "interactiveDots": [
+            {
+              "dotId": "dot1",
+              "order": 1,
+              "title": "Queuing",
+              "text": "Always queue (wait in line) and wait your turn. Pushing in is considered very rude.",
+              "position": {
+                "x": 20,
+                "y": 30
+              }
+            },
+            {
+              "dotId": "dot2",
+              "order": 2,
+              "title": "Politeness",
+              "text": "Say “please”, “thank you” and “sorry” frequently. Be on time for appointments.",
+              "position": {
+                "x": 70,
+                "y": 25
+              }
+            },
+            {
+              "dotId": "dot3",
+              "order": 3,
+              "title": "Public Transport",
+              "text": "Give up your seat for pregnant women, elderly people or disabled people.",
+              "position": {
+                "x": 40,
+                "y": 65
+              }
+            },
+            {
+              "dotId": "dot4",
+              "order": 4,
+              "title": "Things to Avoid",
+              "text": "Do not spit in public, smoke in enclosed public places, speak too loudly or throw litter on the ground.",
+              "position": {
+                "x": 80,
+                "y": 90
+              }
+            }
+          ],
+          "createdAt": "2026-03-01T10:00:00Z",
+          "updatedAt": "2026-03-01T10:00:00Z"
+        },
+        {
+          "sectionId": "sec_9",
+          "sectionType": "Image-Based Exploration",
+          "displayOrder": 9,
+          "title": "UK Money",
+          "content": [
+            {
+              "contentId": "sec9_c1",
+              "order": 1,
+              "type": "paragraph",
+              "text": "he official currency is the British Pound (£), also called Pound Sterling. Coins come in: 1p, 2p, 5p, 10p, 20p, 50p, £1 and £2.",
+              "thumbnail": {
+                "mediaId": "currency",
+                "url": "currency.png",
+                "altText": "Currency in the UK"
+              }
+            },
+            {
+              "contentId": "sec9_c2",
+              "order": 2,
+              "type": "paragraph",
+              "text": "Notes come in: £5, £10, £20 and £50. One pound (£1) equals 100 pence (100p).",
+              "thumbnail": {
+                "mediaId": "currency_notes",
+                "url": "currency_notes.png",
+                "altText": "Currency notes in the UK"
+              }
+            },
+            {
+              "contentId": "sec9_c3",
+              "order": 3,
+              "type": "paragraph",
+              "text": "For example, five 20p coins make £1, and ten 10p coins make £1.",
+              "thumbnail": {
+                "mediaId": "contactless_payment",
+                "url": "contactless_payment.png",
+                "altText": "Contactless payment in the UK"
+              }
+            }
+          ],
+          "createdAt": "2026-03-01T10:00:00Z",
+          "updatedAt": "2026-03-01T10:00:00Z"
+        },
+        {
+          "sectionId": "quiz_sec",
+          "sectionType": "quiz",
+          "displayOrder": 999,
+          "title": "Test Your Knowledge",
+          "status": "draft",
+          "sectionVersion": 1,
+          "isMandatory": true,
+          "quizSettings": {
+            "requireFullCorrect": false,
+            "validationMode": "finalSubmission"
+          },
+          "questions": [
+            {
+              "questionId": "q1",
+              "order": 1,
+              "type": "single_choice",
+              "question": "What are the four countries that make up the United Kingdom?",
+              "thumbnail": {
+                "mediaId": "quiz_uk_map",
+                "url": "quiz_uk_map.png",
+                "altText": "Map of the UK"
+              },
+              "options": [
+                { "id": "a", "text": "England, Scotland, Ireland, Wales" },
+                {
+                  "id": "b",
+                  "text": "England, Scotland, Wales, Northern Ireland"
+                },
+                { "id": "c", "text": "England, Scotland, Wales, France" },
+                { "id": "d", "text": "England, Britain, Ireland, Scotland" }
+              ],
+              "correctOptions": ["b"]
+            },
+
+            {
+              "questionId": "q2",
+              "order": 2,
+              "type": "single_choice",
+              "question": "What is the official currency of the UK?",
+              "thumbnail": {
+                "mediaId": "quiz_currency_symbols",
+                "url": "quiz_currency_symbols.png",
+                "altText": "Different currency symbols"
+              },
+              "options": [
+                { "id": "a", "text": "Euro" },
+                { "id": "b", "text": "Dollar" },
+                { "id": "c", "text": "British Pound (£)" },
+                { "id": "d", "text": "Yen" }
+              ],
+              "correctOptions": ["c"]
+            },
+
+            {
+              "questionId": "q3",
+              "order": 3,
+              "type": "single_choice",
+              "question": "How many pence are in one pound?",
+              "thumbnail": {
+                "mediaId": "quiz_coins",
+                "url": "quiz_coins.png",
+                "altText": "UK coins"
+              },
+              "options": [
+                { "id": "a", "text": "10" },
+                { "id": "b", "text": "50" },
+                { "id": "c", "text": "100" },
+                { "id": "d", "text": "1,000" }
+              ],
+              "correctOptions": ["c"]
+            },
+
+            {
+              "questionId": "q4",
+              "order": 4,
+              "type": "image_single_choice",
+              "question": "Which of these is the UK flag (Union Jack)?",
+              "thumbnail": {
+                "mediaId": "uk_flag",
+                "url": "uk_flag.png",
+                "altText": "UK flag"
+              },
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Flag A",
+                  "image": "flag_union_jack.png"
+                },
+                {
+                  "id": "b",
+                  "text": "Flag B",
+                  "image": "flag_eu.png"
+                },
+                {
+                  "id": "c",
+                  "text": "Flag C",
+                  "image": "flag_usa.png"
+                },
+                {
+                  "id": "d",
+                  "text": "Flag D",
+                  "image": "flag_france.png"
+                }
+              ],
+              "correctOptions": ["a"]
+            },
+
+            {
+              "questionId": "q5",
+              "order": 5,
+              "type": "true_false",
+              "question": "The UK is a multi-faith society and you are free to practise your religion.",
+              "thumbnail": {
+                "mediaId": "quiz_religion",
+                "url": "quiz_religion.png",
+                "altText": "Different places of worship"
+              },
+              "correctOptions": true
+            },
+
+            {
+              "questionId": "q6",
+              "order": 6,
+              "type": "single_choice",
+              "question": "What should you do if you see a pregnant woman standing on public transport?",
+              "thumbnail": {
+                "mediaId": "quiz_bus",
+                "url": "quiz_bus.png",
+                "altText": "Bus interior"
+              },
+              "options": [
+                { "id": "a", "text": "Ignore them" },
+                { "id": "b", "text": "Offer your seat" },
+                { "id": "c", "text": "Ask them to move" },
+                { "id": "d", "text": "Nothing" }
+              ],
+              "correctOptions": ["b"]
+            },
+
+            {
+              "questionId": "q7",
+              "order": 7,
+              "type": "multiple_choice",
+              "question": "Which of these are British values? (Select all that apply)",
+              "thumbnail": {
+                "mediaId": "quiz_values",
+                "url": "quiz_values.png",
+                "altText": "Diverse people illustration"
+              },
+              "options": [
+                { "id": "a", "text": "Tolerance" },
+                { "id": "b", "text": "Aggression" },
+                { "id": "c", "text": "Fairness" },
+                { "id": "d", "text": "Respect" }
+              ],
+              "correctOptions": ["a", "c", "d"]
+            },
+
+            {
+              "questionId": "q8",
+              "order": 8,
+              "type": "match_pairs",
+              "question": "Match each country to its capital city",
+              "thumbnail": {
+                "mediaId": "quiz_uk_map_match",
+                "url": "quiz_uk_map_match.png",
+                "altText": "Map of the UK with countries"
+              },
+              "pairs": [
+                { "left": "England", "right": "London" },
+                { "left": "Scotland", "right": "Edinburgh" },
+                { "left": "Wales", "right": "Cardiff" },
+                { "left": "Northern Ireland", "right": "Belfast" }
+              ]
+            }
+          ],
+          "createdAt": "2026-03-01T10:00:00Z",
+          "updatedAt": "2026-03-01T10:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "UKCO_unit_3_en",
+      "appId": "UKCO",
+      "country": "UK",
+      "type": "unit",
+      "unitId": "unit_3",
+      "language": "en",
+      "title": "YOUR JOURNEY TO THE UK",
+      "slug": "your-journey-to-the-uk",
+      "displayOrder": 3,
+      "thumbnail": {
+        "mediaId": "media_unit3_thumb",
+        "url": "journey.png",
+        "altText": "Journey to the UK"
+      },
+      "estimatedDuration": 20,
+      "version": 1,
+      "status": "draft",
+      "isActive": false,
+      "createdAt": "2026-03-01T10:00:00Z",
+      "updatedAt": "2026-03-01T10:00:00Z",
+      "publishedAt": null,
+      "sections": [
+        {
+          "sectionId": "sec_1",
+          "sectionType": "Image-Based Exploration",
+          "displayOrder": 1,
+          "title": "Who Will Help You Travel",
+          "status": "draft",
+          "sectionVersion": 1,
+          "isMandatory": true,
+          "content": [
+            {
+              "contentId": "sec1_c1",
+              "order": 1,
+              "type": "paragraph",
+              "text": "Your journey to the UK will be arranged by staff from the International Organization for Migration (IOM).",
+              "thumbnail": {
+                "mediaId": "iom_staff_airport",
+                "url": "iom_staff_airport.png",
+                "altText": "IOM staff helping travellers"
+              }
+            },
+            {
+              "contentId": "sec1_c2",
+              "order": 2,
+              "type": "paragraph",
+              "text": "IOM staff will guide you through every step of the travel process. You will not be travelling alone.",
+              "thumbnail": {
+                "mediaId": "iom_staff_guiding",
+                "url": "iom_staff_guiding.png",
+                "altText": "IOM staff guiding travellers"
+              }
+            }
+          ],
+          "createdAt": "2026-03-01T10:00:00Z",
+          "updatedAt": "2026-03-01T10:00:00Z"
+        },
+        {
+          "sectionId": "sec_2",
+          "sectionType": "Image with Tappable Dots",
+          "displayOrder": 2,
+          "title": "What to Pack",
+          "status": "draft",
+          "sectionVersion": 1,
+          "isMandatory": true,
+          "content": [
+            {
+              "contentId": "sec2_c1",
+              "order": 1,
+              "type": "paragraph",
+              "text": "You should think carefully about what to pack. Tap each dot to find out what to bring and what to leave behind.",
+              "thumbnail": {
+                "mediaId": "open_suitcase",
+                "url": "open_suitcase.png",
+                "altText": "Open suitcase illustration"
+              }
+            }
+          ],
+          "interactiveDots": [
+            {
+              "dotId": "dot1",
+              "order": 1,
+              "title": "Clothes",
+              "text": "Pack comfortable clothes for travelling and warm clothes for UK weather - a coat, hat, scarf and gloves.",
+              "position": {
+                "x": 20,
+                "y": 30
+              }
+            },
+            {
+              "dotId": "dot2",
+              "order": 2,
+              "title": "Documents and Medication",
+              "text": "Keep important documents in your hand luggage. Bring prescription medication with a doctor’s letter explaining what it is.",
+              "position": {
+                "x": 70,
+                "y": 25
+              }
+            },
+            {
+              "dotId": "dot3",
+              "order": 3,
+              "title": "Personal Items",
+              "text": "Bring a small amount of money and items with sentimental value such as photos or small keepsakes. If you have a baby, bring nappies, formula, bottles and a change of clothes.",
+              "position": {
+                "x": 40,
+                "y": 65
+              }
+            },
+            {
+              "dotId": "dot4",
+              "order": 4,
+              "title": "Do NOT Pack",
+              "text": "Do not pack knives, scissors, sharp objects, weapons, liquids over 100ml in hand luggage, illegal drugs, or large amounts of cash without declaring it.",
+              "position": {
+                "x": 50,
+                "y": 25
+              }
+            },
+            {
+              "dotId": "dot5",
+              "order": 5,
+              "title": "Luggage Allowance",
+              "text": "Each passenger is usually allowed one or two checked bags (approximately 23kg each) and one carry-on bag. Check your specific allowance with IOM staff.",
+              "position": {
+                "x": 80,
+                "y": 70
+              }
+            }
+          ],
+          "createdAt": "2026-03-01T10:00:00Z",
+          "updatedAt": "2026-03-01T10:00:00Z"
+        },
+        {
+          "sectionId": "sec_3",
+          "sectionType": "Image-Based Exploration",
+          "displayOrder": 3,
+          "title": "The IOM Travel Bag",
+          "status": "draft",
+          "sectionVersion": 1,
+          "isMandatory": true,
+          "content": [
+            {
+              "contentId": "sec3_c1",
+              "order": 1,
+              "type": "paragraph",
+              "text": "You will receive an IOM bag on your travel day. This bag is very important. It contains your travel documents, your Skills Profile, medical documents and important paperwork for UK immigration.",
+              "thumbnail": {
+                "mediaId": "iom_bag",
+                "url": "iom_bag.png",
+                "altText": "IOM travel bag"
+              }
+            },
+            {
+              "contentId": "sec3_c2",
+              "order": 2,
+              "type": "paragraph",
+              "text": "Always keep the IOM bag with you as your hand luggage. Never put it in checked luggage. You will need to hand it to immigration officials when you arrive in the UK.",
+              "thumbnail": {
+                "mediaId": "iom_bag_hand",
+                "url": "iom_bag_hand.png",
+                "altText": "Keep IOM bag with you"
+              }
+            }
+          ],
+          "createdAt": "2026-03-01T10:00:00Z",
+          "updatedAt": "2026-03-01T10:00:00Z"
+        },
+        {
+          "sectionId": "sec_4",
+          "sectionType": "Carousel Slide",
+          "displayOrder": 4,
+          "title": "At the Airport",
+          "status": "draft",
+          "sectionVersion": 1,
+          "isMandatory": true,
+          "content": [
+            {
+              "contentId": "sec4_c1",
+              "order": 1,
+              "type": "paragraph",
+              "text": "Check-in: You will check in your luggage and receive your boarding pass. This shows your seat number and gate number.",
+              "thumbnail": {
+                "mediaId": "airport_checkin",
+                "url": "airport_checkin.png",
+                "altText": "Airport check in"
+              }
+            },
+            {
+              "contentId": "sec4_c2",
+              "order": 2,
+              "type": "paragraph",
+              "text": "Security screening: You and your bags will be scanned. This is normal and happens to everyone. You may need to remove belts, shoes, jackets and electronic items.",
+              "thumbnail": {
+                "mediaId": "airport_security",
+                "url": "airport_security.png",
+                "altText": "Airport security"
+              }
+            },
+            {
+              "contentId": "sec4_c3",
+              "order": 3,
+              "type": "paragraph",
+              "text": "Passport control: Your travel documents will be checked. Answer any questions calmly and honestly.",
+              "thumbnail": {
+                "mediaId": "passport_control",
+                "url": "passport_control.png",
+                "altText": "Passport control"
+              }
+            },
+            {
+              "contentId": "sec4_c4",
+              "order": 4,
+              "type": "paragraph",
+              "text": "Departure gate: Wait at your assigned gate until boarding is announced. Make sure you have your IOM travel bag and boarding pass ready.",
+              "thumbnail": {
+                "mediaId": "departure_gate",
+                "url": "departure_gate.png",
+                "altText": "Airport departure gate"
+              }
+            }
+          ],
+          "createdAt": "2026-03-01T10:00:00Z",
+          "updatedAt": "2026-03-01T10:00:00Z"
+        },
+        {
+          "sectionId": "sec_5",
+          "sectionType": "Image with Tappable Dots",
+          "displayOrder": 5,
+          "title": "On the Plane",
+          "status": "draft",
+          "sectionVersion": 1,
+          "isMandatory": true,
+          "content": [
+            {
+              "contentId": "sec_5",
+              "order": 1,
+              "type": "paragraph",
+              "text": "When you board the plane, find your seat using the number on your boarding pass. Tap each dot to learn about life on the plane.",
+              "thumbnail": {
+                "mediaId": "media_plane_inside",
+                "url": "plane_inside.png",
+                "altText": "Illustration of the inside of an aeroplane with tappable dot areas"
+              }
+            }
+          ],
+          "interactiveDots": [
+            {
+              "dotId": "dot1",
+              "order": 1,
+              "title": "Seat Belts",
+              "text": "You must fasten your seat belt during take-off and landing, and at any other time when the seat belt sign is switched on or when instructed by the cabin crew.",
+              "position": {
+                "x": 20,
+                "y": 85
+              }
+            },
+            {
+              "dotId": "dot2",
+              "order": 2,
+              "title": "No Smoking",
+              "text": "You cannot smoke on the plane. This includes e-cigarettes.",
+              "position": {
+                "x": 40,
+                "y": 35
+              }
+            },
+            {
+              "dotId": "dot3",
+              "order": 3,
+              "title": "Food and Drink",
+              "text": "Food and drinks will be provided during the flight. If you have dietary requirements (e.g. halal, vegetarian, allergies), let IOM staff know before the journey. Alcohol may be offered you are not required to drink it.",
+              "position": {
+                "x": 70,
+                "y": 25
+              }
+            },
+            {
+              "dotId": "dot4",
+              "order": 4,
+              "title": "Using the Toilet",
+              "text": "Aeroplane toilets are small. Look for the “Vacant” and “Occupied” signs on the door. Lock the door when inside, this turns on the light. Only put toilet paper in the toilet. If unsure, ask the cabin crew for help.",
+              "position": {
+                "x": 40,
+                "y": 65
+              }
+            },
+            {
+              "dotId": "dot5",
+              "order": 5,
+              "title": "Safety",
+              "text": "Follow the safety demonstration from the cabin crew. Put your seat upright and tray table away during take-off and landing. Store your carry-on bag in the overhead compartment or under the seat in front of you.",
+              "position": {
+                "x": 80,
+                "y": 70
+              }
+            }
+          ],
+          "createdAt": "2026-03-01T10:00:00Z",
+          "updatedAt": "2026-03-01T10:00:00Z"
+        },
+        {
+          "sectionId": "sec_6",
+          "sectionType": "Image-Based Exploration",
+          "displayOrder": 6,
+          "title": "Transit Stops",
+          "status": "draft",
+          "sectionVersion": 1,
+          "isMandatory": true,
+          "content": [
+            {
+              "contentId": "sec6_c1",
+              "order": 1,
+              "type": "paragraph",
+              "text": "Some flights may have a transit stop - a stopover in another country. If this happens, stay in the transit area of the airport. Do NOT leave the airport or go through immigration.",
+              "thumbnail": {
+                "mediaId": "transit_sign",
+                "url": "transit_sign.png",
+                "altText": "Transit sign"
+              }
+            },
+            {
+              "contentId": "sec6_c2",
+              "order": 2,
+              "type": "paragraph",
+              "text": "Follow IOM staff instructions and always keep your IOM travel bag and documents with you. If you are unsure what to do, ask airport staff for help.",
+              "thumbnail": {
+                "mediaId": "transit_waiting",
+                "url": "transit_waiting.png",
+                "altText": "Transit waiting area"
+              }
+            }
+          ],
+          "createdAt": "2026-03-01T10:00:00Z",
+          "updatedAt": "2026-03-01T10:00:00Z"
+        },
+        {
+          "sectionId": "sec_7",
+          "sectionType": "Carousel Slide",
+          "displayOrder": 7,
+          "title": "Arriving in the UK",
+          "status": "draft",
+          "sectionVersion": 1,
+          "isMandatory": true,
+          "content": [
+            {
+              "contentId": "sec7_c1",
+              "order": 1,
+              "type": "paragraph",
+              "text": "When you arrive in the UK, you will go through UK immigration (border control). Show your travel documents from the IOM travel bag. Immigration officers may ask you questions, answer calmly and honestly.",
+              "thumbnail": {
+                "mediaId": "uk_border",
+                "url": "uk_border.png",
+                "altText": "UK immigration"
+              }
+            },
+            {
+              "contentId": "sec7_c2",
+              "order": 2,
+              "type": "paragraph",
+              "text": "After passing through immigration, collect your checked luggage from the baggage claim area.",
+              "thumbnail": {
+                "mediaId": "baggage_claim",
+                "url": "baggage_claim.png",
+                "altText": "Baggage claim"
+              }
+            },
+            {
+              "contentId": "sec7_c3",
+              "order": 3,
+              "type": "paragraph",
+              "text": "Someone will be waiting to meet you after you collect your luggage. They will take you to your accommodation. You will not have to pay for transport.",
+              "thumbnail": {
+                "mediaId": "arrival_meeting",
+                "url": "arrival_meeting.png",
+                "altText": "Meeting at arrivals"
+              }
+            }
+          ],
+          "createdAt": "2026-03-01T10:00:00Z",
+          "updatedAt": "2026-03-01T10:00:00Z"
+        },
+        {
+          "sectionId": "sec_8",
+          "sectionType": "Carousel Slide",
+          "displayOrder": 8,
+          "title": "Important Reminders",
+          "status": "draft",
+          "sectionVersion": 1,
+          "isMandatory": true,
+          "content": [
+            {
+              "contentId": "sec8_c1",
+              "order": 1,
+              "type": "paragraph",
+              "text": "Keep your IOM travel bag with you at all times - never put it in checked luggage. Keep your family together throughout the journey.",
+              "thumbnail": {
+                "mediaId": "family_travel",
+                "url": "family_travel.png",
+                "altText": "Family travelling"
+              }
+            },
+            {
+              "contentId": "sec8_c2",
+              "order": 2,
+              "type": "paragraph",
+              "text": "If you feel unwell, tell IOM staff or cabin crew immediately. Take any medication you need in your hand luggage.",
+              "thumbnail": {
+                "mediaId": "talk_staff",
+                "url": "talk_staff.png",
+                "altText": "Talking to staff"
+              }
+            },
+            {
+              "contentId": "sec8_c3",
+              "order": 3,
+              "type": "paragraph",
+              "text": "If you get lost or separated, ask airport staff for help. Stay calm, the journey may feel long, but people are there to help you.",
+              "thumbnail": {
+                "mediaId": "stay_calm",
+                "url": "stay_calm.png",
+                "altText": "Stay calm during travel"
+              }
+            }
+          ],
+          "createdAt": "2026-03-01T10:00:00Z",
+          "updatedAt": "2026-03-01T10:00:00Z"
+        },
+        {
+          "sectionId": "quiz_sec",
+          "sectionType": "quiz",
+          "displayOrder": 999,
+          "title": "Test Your Knowledge",
+          "status": "draft",
+          "sectionVersion": 1,
+          "isMandatory": true,
+          "quizSettings": {
+            "requireFullCorrect": false,
+            "validationMode": "finalSubmission"
+          },
+          "questions": [
+            {
+              "questionId": "q1",
+              "order": 1,
+              "type": "true_false",
+              "question": "You should put your IOM travel bag in your checked luggage.",
+              "explanation": "Always keep the IOM bag with you as your hand luggage. Never put it in checked luggage.",
+              "thumbnail": {
+                "mediaId": "airport_checkin",
+                "url": "airport_checkin.png",
+                "altText": "Airport check in"
+              },
+              "correctOptions": false
+            },
+            {
+              "questionId": "q2",
+              "order": 2,
+              "type": "true_false",
+              "question": "You must fasten your seat belt during take-off and landing, and whenever the seat belt sign is on.",
+              "thumbnail": {
+                "mediaId": "airport_checkin",
+                "url": "airport_checkin.png",
+                "altText": "Airport check in"
+              },
+              "correctOptions": true
+            },
+            {
+              "questionId": "q3",
+              "order": 3,
+              "type": "true_false",
+              "question": "You are allowed to smoke on the plane.",
+              "explanation": "Smoking (including e-cigarettes) is not allowed on any flight.",
+              "thumbnail": {
+                "mediaId": "airport_checkin",
+                "url": "airport_checkin.png",
+                "altText": "Airport check in"
+              },
+              "correctOptions": false
+            },
+            {
+              "questionId": "q4",
+              "order": 4,
+              "type": "single_choice",
+              "question": "What does the IOM bag contain?",
+              "thumbnail": {
+                "mediaId": "airport_checkin",
+                "url": "airport_checkin.png",
+                "altText": "Airport check in"
+              },
+              "options": [
+                { "id": "a", "text": "Snacks and water" },
+                {
+                  "id": "b",
+                  "text": "Travel documents, Skills Profile and medical paperwork"
+                },
+                { "id": "c", "text": "Clothes" },
+                { "id": "d", "text": "Money and gifts" }
+              ],
+              "correctOptions": ["b"]
+            },
+            {
+              "questionId": "q5",
+              "order": 5,
+              "type": "true_false",
+              "question": "During a transit stop you should leave the airport.",
+              "explanation": "Stay in the transit area and follow IOM staff instructions.",
+              "thumbnail": {
+                "mediaId": "airport_checkin",
+                "url": "airport_checkin.png",
+                "altText": "Airport check in"
+              },
+              "correctOptions": false
+            },
+            {
+              "questionId": "q6",
+              "order": 6,
+              "type": "single_choice",
+              "question": "What should you do if you feel unwell during the flight?",
+              "thumbnail": {
+                "mediaId": "airport_checkin",
+                "url": "airport_checkin.png",
+                "altText": "Airport check in"
+              },
+              "options": [
+                { "id": "a", "text": "Wait until arrival" },
+                {
+                  "id": "b",
+                  "text": "Tell cabin crew or IOM staff immediately"
+                },
+                { "id": "c", "text": "Take someone else's medicine" },
+                { "id": "d", "text": "Ignore it" }
+              ],
+              "correctOptions": ["b"]
+            },
+            {
+              "questionId": "q7",
+              "order": 7,
+              "type": "true_false",
+              "question": "You can bring liquids over 100ml in hand luggage.",
+              "explanation": "Liquids in hand luggage must be 100ml or less.",
+              "thumbnail": {
+                "mediaId": "airport_checkin",
+                "url": "airport_checkin.png",
+                "altText": "Airport check in"
+              },
+              "correctOptions": false
+            },
+            {
+              "questionId": "q8",
+              "order": 8,
+              "type": "true_false",
+              "question": "Someone will meet you at the UK airport.",
+              "thumbnail": {
+                "mediaId": "airport_checkin",
+                "url": "airport_checkin.png",
+                "altText": "Airport check in"
+              },
+              "correctOptions": true
+            },
+            {
+              "questionId": "q9",
+              "order": 9,
+              "type": "match_pairs",
+              "question": "Match each airport step in order",
+              "thumbnail": {
+                "mediaId": "airport_checkin",
+                "url": "airport_checkin.png",
+                "altText": "Airport check in"
+              },
+              "pairs": [
+                { "left": "Step 1", "right": "Check-in" },
+                { "left": "Step 2", "right": "Security screening" },
+                { "left": "Step 3", "right": "Passport control" },
+                { "left": "Step 4", "right": "Departure gate" }
+              ]
+            }
+          ],
+          "createdAt": "2026-03-01T10:00:00Z",
+          "updatedAt": "2026-03-01T10:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "UKCO_unit_4_en",
+      "appId": "UKCO",
+      "country": "UK",
+      "type": "unit",
+      "unitId": "unit_4",
+      "language": "en",
+      "title": "YOUR FIRST FEW WEEKS IN THE UK",
+      "slug": "your-first-few-weeks-in-the-uk",
+      "displayOrder": 4,
+      "thumbnail": {
+        "mediaId": "media_unit4_thumb",
+        "url": "first_few_weeks.png",
+        "altText": "Your First Few Weeks in the UK"
+      },
+      "estimatedDuration": 20,
+      "version": 1,
+      "status": "draft",
+      "isActive": false,
+      "createdAt": "2026-03-01T10:00:00Z",
+      "updatedAt": "2026-03-01T10:00:00Z",
+      "publishedAt": null,
+
+      "sections": [
+        {
+          "sectionId": "sec_1",
+          "sectionType": "Image with Tappable Dots",
+          "displayOrder": 1,
+          "title": "Your Legal Status and eVisa",
+          "status": "draft",
+          "sectionVersion": 1,
+          "isMandatory": true,
+          "content": [
+            {
+              "contentId": "sec1_c1",
+              "order": 1,
+              "type": "paragraph",
+              "text": "When you arrive in the UK, you will have the legal right to stay. Tap each dot to learn more.",
+              "thumbnail": {
+                "mediaId": "evvisa_image",
+                "url": "evvisa.png",
+                "altText": "Person with eVisa on phone"
+              }
+            }
+          ],
+          "interactiveDots": [
+            {
+              "dotId": "dot1",
+              "order": 1,
+              "title": "Your Rights",
+              "text": "You can access public services such as healthcare and schools. You have the right to work from your first day. You can apply for benefits to cover your basic living costs. You can apply for British citizenship in the future.",
+              "position": {
+                "x": 20,
+                "y": 30
+              }
+            },
+            {
+              "dotId": "dot2",
+              "order": 2,
+              "title": "Your eVisa",
+              "text": "You will be supported to access your eVisa through an online UKVI account set up by the UK Home Office. Every family member receives an eVisa, including children and babies. It is free of charge.",
+              "position": {
+                "x": 40,
+                "y": 65
+              }
+            },
+            {
+              "dotId": "dot3",
+              "order": 3,
+              "title": "Why Your eVisa Matters",
+              "text": "Your eVisa is evidence of your identity and legal status. You need it to access benefits, the NHS and other services. Unlike a physical document, it cannot be lost, damaged or stolen. Keep your UKVI account access safe and secure.",
+              "position": {
+                "x": 70,
+                "y": 25
+              }
+            }
+          ],
+          "createdAt": "2026-03-01T10:00:00Z",
+          "updatedAt": "2026-03-01T10:00:00Z"
+        },
+        {
+          "sectionId": "sec_2",
+          "sectionType": "Image with Tappable Dots",
+          "displayOrder": 2,
+          "title": "Support When You Arrive",
+          "status": "draft",
+          "sectionVersion": 1,
+          "isMandatory": true,
+          "content": [
+            {
+              "contentId": "sec2_c1",
+              "order": 1,
+              "type": "paragraph",
+              "text": "When you arrive, you will have support to help you settle in. Someone will meet you at the airport and take you to your accommodation. Tap each dot to learn what your support network will help you with.",
+              "thumbnail": {
+                "mediaId": "support_arrival",
+                "url": "support_arrival.png",
+                "altText": "Person welcomed in neighbourhood"
+              }
+            }
+          ],
+          "interactiveDots": [
+            {
+              "dotId": "dot1",
+              "order": 1,
+              "title": "Your Home",
+              "text": "Settle into your accommodation. If your flight arrives late, you may be accommodated overnight with food and drinks provided.",
+              "position": {
+                "x": 20,
+                "y": 30
+              }
+            },
+            {
+              "dotId": "dot2",
+              "order": 2,
+              "title": "Essential Registration",
+              "text": "Access your eVisa, open a bank account, register with a local GP (doctor) and dentist, and register children at local schools.",
+              "position": {
+                "x": 35,
+                "y": 45
+              }
+            },
+            {
+              "dotId": "dot3",
+              "order": 3,
+              "title": "Money and Benefits",
+              "text": "Understand UK money and how to budget. Apply for benefits (financial support from the government).",
+              "position": {
+                "x": 70,
+                "y": 25
+              }
+            },
+            {
+              "dotId": "dot4",
+              "order": 4,
+              "title": "Finding Your Way",
+              "text": "Find places to shop, places of worship, schools, parks and public transport in your local area.",
+              "position": {
+                "x": 40,
+                "y": 65
+              }
+            },
+            {
+              "dotId": "dot5",
+              "order": 5,
+              "title": "Work and English",
+              "text": "Register for English language classes and start looking for work. Your support network will help with job applications but cannot give you a job directly.",
+              "position": {
+                "x": 80,
+                "y": 90
+              }
+            }
+          ],
+          "createdAt": "2026-03-01T10:00:00Z",
+          "updatedAt": "2026-03-01T10:00:00Z"
+        },
+        {
+          "sectionId": "sec_3",
+          "sectionType": "Carousel Slide",
+          "displayOrder": 3,
+          "title": "Getting Around",
+          "status": "draft",
+          "sectionVersion": 1,
+          "isMandatory": true,
+          "content": [
+            {
+              "contentId": "sec3_c1",
+              "order": 1,
+              "type": "paragraph",
+              "text": "There are extensive train, bus and tram services across the UK. Public transport is safe and used by everyone. Tips: buy weekly or monthly tickets, use contactless payment, and take buses rather than trains to save money. You must always pay for your ticket. Not doing so could result in a fine.",
+              "thumbnail": {
+                "mediaId": "transport",
+                "url": "bus_train_tram.png",
+                "altText": "Bus train tram"
+              }
+            },
+            {
+              "contentId": "sec3_c2",
+              "order": 2,
+              "type": "paragraph",
+              "text": "Taxis and ride apps (Uber, Bolt) are available but more expensive than public transport. Your support network will help you understand local transport options.",
+              "thumbnail": {
+                "mediaId": "taxi_apps",
+                "url": "taxi_apps.png",
+                "altText": "Taxi and ride apps"
+              }
+            },
+            {
+              "contentId": "sec3_c3",
+              "order": 3,
+              "type": "paragraph",
+              "text": "Cycling is popular and affordable. In some areas you can hire bikes. Always wear a helmet, wear bright clothing and use cycle lanes where available.",
+              "thumbnail": {
+                "mediaId": "cycling",
+                "url": "cycling.png",
+                "altText": "Cycling safely"
+              }
+            },
+            {
+              "contentId": "sec3_c4",
+              "order": 4,
+              "type": "paragraph",
+              "text": "To drive you need a valid licence, car insurance and a registered car with MOT and vehicle tax. All passengers must wear seat belts. Children need the correct safety seat. Using your phone while driving is a criminal offence. You can use your existing licence for 12 months, then you must pass UK tests. Buying and insuring a car is expensive, public transport is often cheaper.",
+              "thumbnail": {
+                "mediaId": "driving_rules",
+                "url": "driving_rules.png",
+                "altText": "Driving rules UK"
+              }
+            }
+          ],
+          "createdAt": "2026-03-01T10:00:00Z",
+          "updatedAt": "2026-03-01T10:00:00Z"
+        },
+        {
+          "sectionId": "sec_4",
+          "sectionType": "Carousel Slide",
+          "displayOrder": 4,
+          "title": "Becoming Independent",
+          "content": [
+            {
+              "contentId": "sec4_c1",
+              "order": 1,
+              "type": "paragraph",
+              "text": "Your support network will not always be available. During working hours (Monday to Friday) they will be there to help, but outside these hours you may need to manage on your own.",
+              "thumbnail": {
+                "mediaId": "working_hours",
+                "url": "working_hours.png",
+                "altText": "Working hours"
+              }
+            },
+            {
+              "contentId": "sec4_c2",
+              "order": 2,
+              "type": "paragraph",
+              "text": "Ask questions whenever you are unsure about something. Tell your support contacts if you have any concerns or worries.",
+              "thumbnail": {
+                "mediaId": "ask_questions",
+                "url": "ask_questions.png",
+                "altText": "Ask questions"
+              }
+            },
+            {
+              "contentId": "sec4_c3",
+              "order": 3,
+              "type": "paragraph",
+              "text": "Start learning English as soon as possible as this is the most important step towards independence.",
+              "thumbnail": {
+                "mediaId": "confidence",
+                "url": "independence.png",
+                "altText": "Independent living"
+              }
+            }
+          ],
+          "createdAt": "2026-03-01T10:00:00Z",
+          "updatedAt": "2026-03-01T10:00:00Z"
+        },
+        {
+          "sectionId": "sec_5",
+          "sectionType": "Image-Based Exploration",
+          "displayOrder": 5,
+          "title": "Places of Worship",
+          "content": [
+            {
+              "contentId": "sec5_c1",
+              "order": 1,
+              "type": "paragraph",
+              "text": "The UK is a multi-faith society. There are mosques, churches, synagogues, temples and other places of worship. You are free to practise your religion.",
+              "thumbnail": {
+                "mediaId": "worship",
+                "url": "worship.png",
+                "altText": "Places of worship"
+              }
+            },
+            {
+              "contentId": "sec5_c2",
+              "order": 2,
+              "type": "paragraph",
+              "text": "Your support network will help you find local places of worship. If there is none for your faith nearby, they can help you find a community prayer space and a faith leader. Many resettled people have found support, friendship and community through their place of worship.",
+              "thumbnail": {
+                "mediaId": "faith_community",
+                "url": "faith_community.png",
+                "altText": "Faith community"
+              }
+            }
+          ],
+          "createdAt": "2026-03-01T10:00:00Z",
+          "updatedAt": "2026-03-01T10:00:00Z"
+        },
+        {
+          "sectionId": "sec_6",
+          "sectionType": "Carousel Slide",
+          "displayOrder": 6,
+          "title": "Learning English",
+          "content": [
+            {
+              "contentId": "sec6_c1",
+              "order": 1,
+              "type": "paragraph",
+              "text": "Learning and speaking English is key to integration. It will help you find work, support your children’s education, access services, build friendships and become independent more quickly.",
+              "thumbnail": {
+                "mediaId": "learn_english",
+                "url": "learn_english.png",
+                "altText": "Learning English"
+              }
+            },
+            {
+              "contentId": "sec6_c2",
+              "order": 2,
+              "type": "paragraph",
+              "text": "Your support network will help you register for English language and literacy classes (ESOL) in your local area.",
+              "thumbnail": {
+                "mediaId": "esol",
+                "url": "esol.png",
+                "altText": "ESOL class"
+              }
+            },
+            {
+              "contentId": "sec6_c3",
+              "order": 3,
+              "type": "paragraph",
+              "text": "The British Council offers many free tools and activities to help you learn English:",
+              "links": [
+                {
+                  "id": "link1",
+                  "title": "Learn English (for adults)",
+                  "url": "https://learnenglish.britishcouncil.org",
+                  "openType": "external"
+                },
+                {
+                  "id": "link2",
+                  "title": "Learn English Kids (for children)",
+                  "url": "https://learnenglishkids.britishcouncil.org",
+                  "openType": "external"
+                },
+                {
+                  "id": "link3",
+                  "title": "Learn English Teens (for teenagers)",
+                  "url": "https://learnenglishteens.britishcouncil.org",
+                  "openType": "external"
+                }
+              ],
+              "thumbnail": {
+                "mediaId": "british_council",
+                "url": "british_council.png",
+                "altText": "British Council resources"
+              }
+            }
+          ],
+          "createdAt": "2026-03-01T10:00:00Z",
+          "updatedAt": "2026-03-01T10:00:00Z"
+        },
+        {
+          "sectionId": "sec_7",
+          "sectionType": "Image-Based Exploration",
+          "displayOrder": 7,
+          "title": "Can My Family Join Me in the UK?",
+          "content": [
+            {
+              "contentId": "sec7_c1",
+              "order": 1,
+              "type": "paragraph",
+              "text": "If you have been resettled without some family members, it is important to understand that resettlement places are very limited globally. The likelihood of additional family members being identified is unfortunately very low.",
+              "thumbnail": {
+                "mediaId": "family_support",
+                "url": "family_support.png",
+                "altText": "Family illustration"
+              }
+            },
+            {
+              "contentId": "sec7_c2",
+              "order": 2,
+              "type": "paragraph",
+              "text": "UK Family Reunion rules allow spouses (if married before arrival) and dependent children under 18 to apply. In exceptional circumstances, others may qualify. There is no guarantee that other family members will be able to join you.",
+              "thumbnail": {
+                "mediaId": "family_reunion",
+                "url": "family_reunion.png",
+                "altText": "Family reunion process"
+              }
+            },
+            {
+              "contentId": "sec7_c3",
+              "order": 3,
+              "type": "paragraph",
+              "text": "If you find it difficult to be separated from your family, please speak with your support network. They can help you access support services. If family members outside the UK have safety concerns, they should contact their nearest UNHCR office.",
+              "thumbnail": {
+                "mediaId": "support_worker",
+                "url": "support_worker.png",
+                "altText": "Support worker conversation"
+              }
+            }
+          ],
+          "createdAt": "2026-03-01T10:00:00Z",
+          "updatedAt": "2026-03-01T10:00:00Z"
+        },
+        {
+          "sectionId": "quiz_sec",
+          "sectionType": "quiz",
+          "displayOrder": 999,
+          "title": "Test Your Knowledge",
+          "status": "draft",
+          "sectionVersion": 1,
+          "isMandatory": true,
+          "quizSettings": {
+            "requireFullCorrect": false,
+            "validationMode": "finalSubmission"
+          },
+          "questions": [
+            {
+              "questionId": "q1",
+              "type": "true_false",
+              "order": 1,
+              "question": "Your eVisa is free of charge and every family member will receive one.",
+              "thumbnail": {
+                "mediaId": "airport_checkin",
+                "url": "airport_checkin.png",
+                "altText": "Airport check in"
+              },
+              "correctOptions": true
+            },
+
+            {
+              "questionId": "q2",
+              "type": "true_false",
+              "order": 2,
+              "question": "Your support network will give you a job when you arrive.",
+              "explanation": "Finding work is your responsibility, but your support network will help with applications.",
+              "thumbnail": {
+                "mediaId": "airport_checkin",
+                "url": "airport_checkin.png",
+                "altText": "Airport check in"
+              },
+              "correctOptions": false
+            },
+
+            {
+              "questionId": "q3",
+              "type": "true_false",
+              "order": 3,
+              "question": "It is cheap and easy to buy a car and get insurance in the UK.",
+              "explanation": "Buying and insuring a car is expensive. Public transport is often cheaper.",
+              "thumbnail": {
+                "mediaId": "airport_checkin",
+                "url": "airport_checkin.png",
+                "altText": "Airport check in"
+              },
+              "correctOptions": false
+            },
+
+            {
+              "questionId": "q4",
+              "type": "true_false",
+              "order": 4,
+              "question": "You must wear a seat belt when travelling in a car.",
+              "thumbnail": {
+                "mediaId": "airport_checkin",
+                "url": "airport_checkin.png",
+                "altText": "Airport check in"
+              },
+              "correctOptions": true
+            },
+
+            {
+              "questionId": "q5",
+              "type": "true_false",
+              "order": 5,
+              "question": "Once in the UK, you cannot leave or travel to other countries.",
+              "explanation": "You can leave once you have your eVisa and a valid travel document. However, travelling to your country of origin could affect your status.",
+              "thumbnail": {
+                "mediaId": "airport_checkin",
+                "url": "airport_checkin.png",
+                "altText": "Airport check in"
+              },
+              "correctOptions": false
+            },
+
+            {
+              "questionId": "q6",
+              "type": "true_false",
+              "order": 6,
+              "question": "Your rights to access public services will differ from UK citizens.",
+              "explanation": "You will have the same rights and benefits as people already living in the UK.",
+              "thumbnail": {
+                "mediaId": "airport_checkin",
+                "url": "airport_checkin.png",
+                "altText": "Airport check in"
+              },
+              "correctOptions": false
+            },
+
+            {
+              "questionId": "q7",
+              "type": "single_choice",
+              "order": 7,
+              "question": "Which of these should you do as soon as possible after arriving in the UK?",
+              "options": [
+                { "id": "a", "text": "Buy a car" },
+                { "id": "b", "text": "Start learning English" },
+                { "id": "c", "text": "Find your own accommodation" },
+                { "id": "d", "text": "Travel back to your home country" }
+              ],
+              "correctOptions": ["b"]
+            },
+
+            {
+              "questionId": "q8",
+              "type": "multiple_choice",
+              "order": 8,
+              "question": "Which of these can your support network help you with?",
+              "options": [
+                { "id": "a", "text": "Register with a GP" },
+                { "id": "b", "text": "Give you a job" },
+                { "id": "c", "text": "Open a bank account" },
+                { "id": "d", "text": "Register children at school" }
+              ],
+              "correctOptions": ["a", "c", "d"]
+            },
+
+            {
+              "questionId": "q9",
+              "type": "match_pairs",
+              "order": 9,
+              "question": "Match each task to who can help you",
+              "pairs": [
+                {
+                  "left": "Register with a GP",
+                  "right": "Your support network"
+                },
+                {
+                  "left": "Learn English",
+                  "right": "ESOL classes / British Council online resources"
+                },
+                {
+                  "left": "Find a place of worship",
+                  "right": "Your support network"
+                },
+                {
+                  "left": "Apply for benefits",
+                  "right": "Jobcentre / support network"
+                }
+              ]
+            }
+          ],
+          "createdAt": "2026-03-01T10:00:00Z",
+          "updatedAt": "2026-03-01T10:00:00Z"
+        }
+      ]
+    }
+  ]
+}
