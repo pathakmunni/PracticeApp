@@ -3,13 +3,13 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import DashboardTabs from './DashboardTabs';
-import ChooseLanguageScreen from '../feature/onboarding/screens/ChooseLanguageScreen';
-import AddUserScreen from '../feature/onboarding/screens/AddUserScreen';
-import ProfileSelectScreen from '../feature/onboarding/screens//ProfileSelectScreen';
+import ChooseLanguageScreen from '../features/onboarding/screens/ChooseLanguageScreen';
+import AddUserScreen from '../features/onboarding/screens/AddUserScreen';
+import ProfileSelectScreen from '../features/onboarding/screens/ProfileSelectScreen';
 
-import SectionScreen from '../feature/course/screens/SectionScreen';
-import LearningScreen from '../feature/course/screens/LearningScreen';
-import HomeScreen from '../feature/course/screens/HomeScreen';
+import SectionScreen from '../features/course/screens/SectionScreen';
+import LearningScreen from '../features/course/screens/LearningScreen';
+import HomeScreen from '../features/course/screens/HomeScreen';
 
 import { useDispatch } from 'react-redux';
 import { loadProfiles } from '../store/slices/profileSlice';

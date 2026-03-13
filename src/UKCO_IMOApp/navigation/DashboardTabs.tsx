@@ -34,9 +34,9 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
-import HomeScreen from '../feature/course/screens/HomeScreen';
-import ProfileScreen from '../feature/profile/screens/ProfileScreen';
-import SettingsScreen from '../feature/settings/screens/SettingsScreen';
+import HomeScreen from '../features/course/screens/HomeScreen';
+import ProfileScreen from '../features/profile/screens/ProfileScreen';
+import SettingsScreen from '../features/settings/screens/SettingsScreen';
 
 const Tab = createBottomTabNavigator();
 
