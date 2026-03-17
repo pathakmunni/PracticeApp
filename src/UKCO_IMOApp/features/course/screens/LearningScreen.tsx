@@ -1,219 +1,61 @@
-import React, { useState } from "react";
-import { View } from "react-native";
-import { useSelector, useDispatch } from "react-redux";
+// import React, { useState } from "react";
+// import { View } from "react-native";
+// import { useSelector, useDispatch } from "react-redux";
 
-import AppHeader from "../../../components/AppHeader";
-import BottomNavigation from "../components/BottomNavigation";
-import ContentRenderer from "../components/ContentRenderer";
-import QuizRenderer from "../components/QuizRenderer";
+// import AppHeader from "../../../components/AppHeader";
+// import BottomNavigation from "../components/BottomNavigation";
+// import ContentRenderer from "../components/ContentRenderer";
+// import QuizRenderer from "../components/QuizRenderer";
 
-import { submitQuestion } from "../../../store/slices/quizSlice";
-import { RootState } from "../../../store/store";
-
-export default function LearningScreen({ route, navigation }: any) {
-
-  const { section } = route.params;
-
-  const dispatch = useDispatch();
-
-  const [index, setIndex] = useState(0);
-
-  const isQuiz = section.sectionType === "quiz";
-
-  const items = isQuiz
-    ? section.questions ?? []
-    : section.content ?? [];
-
-  const currentItem = items[index];
-
-  const selected = useSelector(
-    (state: RootState) =>
-      state.quiz.answers?.[currentItem?.questionId ?? ""] ?? []
-  );
-
-  const submitted = useSelector(
-    (state: RootState) =>
-      state.quiz.submitted?.[currentItem?.questionId ?? ""] ?? false
-  );
-
-  if (!currentItem) return null;
-
-  const isLast = index === items.length - 1;
-
-  /* ---------- NEXT ---------- */
-
-  const handleNext = () => {
-
-    if (!isQuiz) {
-
-      if (isLast) navigation.goBack();
-      else setIndex(prev => prev + 1);
-
-      return;
-    }
-
-    if (!submitted) {
-      dispatch(submitQuestion(currentItem.questionId));
-      return;
-    }
-
-    if (isLast) {
-      navigation.goBack();
-    } else {
-      setIndex(prev => prev + 1);
-    }
-  };
-
-  const handlePrevious = () => {
-    if (index > 0) setIndex(prev => prev - 1);
-  };
-
-  const progress = (index + 1) / items.length;
-
-  return (
-
-    <View style={{ flex: 1 }}>
-
-      <AppHeader
-        title={section.title}
-        onBack={() => navigation.goBack()}
-        showProgress
-        progress={progress}
-      />
-
-      <View style={{ flex: 1, padding: 20 }}>
-
-        {isQuiz
-          ? <QuizRenderer question={currentItem} />
-          : <ContentRenderer item={currentItem} />
-        }
-
-      </View>
-
-      <BottomNavigation
-        onNext={handleNext}
-        onPrevious={handlePrevious}
-        disablePrevious={index === 0}
-        disableNext={isQuiz ? selected.length === 0 : false}
-        nextLabel={submitted ? "Next" : "Submit"}
-      />
-
-    </View>
-  );
-}
-
-// import React, { useState } from 'react';
-// import { View, StyleSheet } from 'react-native';
-// import { useDispatch, useSelector } from 'react-redux';
-
-// import AppHeader from '../../../components/AppHeader';
-// import BottomNavigation from '../components/BottomNavigation';
-// import ContentRenderer from '../components/ContentRenderer';
-// import QuizRenderer from '../components/QuizRenderer';
-
-// import { submitQuestion } from '../../../store/slices/quizSlice';
-// import { RootState } from '../../../store/store';
+// import { submitQuestion } from "../../../store/slices/quizSlice";
+// import { RootState } from "../../../store/store";
 
 // export default function LearningScreen({ route, navigation }: any) {
+
 //   const { section } = route.params;
 
 //   const dispatch = useDispatch();
 
 //   const [index, setIndex] = useState(0);
 
-//   const isQuiz = section.sectionType === 'quiz';
+//   const isQuiz = section.sectionType === "quiz";
 
-//   const items = isQuiz ? section.questions ?? [] : section.content ?? [];
+//   const items = isQuiz
+//     ? section.questions ?? []
+//     : section.content ?? [];
 
 //   const currentItem = items[index];
 
 //   const selected = useSelector(
 //     (state: RootState) =>
-//       state.quiz.answers?.[currentItem?.questionId ?? ''] ?? [],
+//       state.quiz.answers?.[currentItem?.questionId ?? ""] ?? []
 //   );
 
 //   const submitted = useSelector(
 //     (state: RootState) =>
-//       state.quiz.submitted?.[currentItem?.questionId ?? ''] ?? false,
+//       state.quiz.submitted?.[currentItem?.questionId ?? ""] ?? false
 //   );
 
 //   if (!currentItem) return null;
 
 //   const isLast = index === items.length - 1;
 
-//   /* ---------- CHECK IF ANSWER CORRECT ---------- */
-
-//   const isCorrect = (() => {
-//     if (!isQuiz) return true;
-
-//     if (currentItem.type === 'true_false') {
-//       return (
-//         selected.length === 1 &&
-//         String(selected[0]) === String(currentItem.correctOptions)
-//       );
-//     }
-
-//     if (currentItem.type === 'single_choice') {
-//       const correctIds = (currentItem.correctOptions ?? []).map(String);
-
-//       return selected.length === 1 && correctIds.includes(String(selected[0]));
-//     }
-
-//     if (currentItem.type === 'image_single_choice') {
-//       const correctIds = (currentItem.correctOptions ?? []).map(String);
-
-//       return selected.length === 1 && correctIds.includes(String(selected[0]));
-//     }
-
-//     if (currentItem.type === 'multiple_choice') {
-//       const correctIds = currentItem.correctOptions.map(String);
-//       const selectedIds = selected.map(String);
-
-//       return (
-//         selectedIds.length === correctIds.length &&
-//         selectedIds.every(id => correctIds.includes(id))
-//       );
-//     }
-
-//     // if (currentItem.type === "multiple_choice") {
-//     //   const correctIds = (currentItem.correctOptions ?? []).map(String);
-//     //   const selectedIds = selected.map(String);
-
-//     //   return (
-//     //     selectedIds.length === correctIds.length &&
-//     //     selectedIds.every((id) => correctIds.includes(id))
-//     //   );
-//     // }
-
-//     if (currentItem.type === 'match_pairs') {
-//       // handled inside component
-//       return submitted;
-//     }
-
-//     return false;
-//   })();
-
-//   /* ---------- NEXT BUTTON ---------- */
+//   /* ---------- NEXT ---------- */
 
 //   const handleNext = () => {
-//     /* CONTENT SLIDES */
+
 //     if (!isQuiz) {
-//       if (isLast) {
-//         navigation.goBack();
-//       } else {
-//         setIndex(prev => prev + 1);
-//       }
+
+//       if (isLast) navigation.goBack();
+//       else setIndex(prev => prev + 1);
+
 //       return;
 //     }
-
-//     /* QUIZ FLOW */
 
 //     if (!submitted) {
 //       dispatch(submitQuestion(currentItem.questionId));
 //       return;
 //     }
-
-//     if (!isCorrect) return;
 
 //     if (isLast) {
 //       navigation.goBack();
@@ -222,30 +64,16 @@ export default function LearningScreen({ route, navigation }: any) {
 //     }
 //   };
 
-//   /* ---------- PREVIOUS BUTTON ---------- */
-
 //   const handlePrevious = () => {
-//     if (index > 0) {
-//       setIndex(prev => prev - 1);
-//     }
+//     if (index > 0) setIndex(prev => prev - 1);
 //   };
-
-//   /* ---------- BUTTON LABEL ---------- */
-
-//   let nextLabel = 'Next';
-
-//   if (isQuiz) {
-//     if (!submitted) nextLabel = 'Submit';
-//     else if (isLast) nextLabel = 'Finish';
-//     else nextLabel = 'Next';
-//   } else {
-//     nextLabel = isLast ? 'Finish' : 'Next';
-//   }
 
 //   const progress = (index + 1) / items.length;
 
 //   return (
-//     <View style={styles.container}>
+
+//     <View style={{ flex: 1 }}>
+
 //       <AppHeader
 //         title={section.title}
 //         onBack={() => navigation.goBack()}
@@ -253,12 +81,13 @@ export default function LearningScreen({ route, navigation }: any) {
 //         progress={progress}
 //       />
 
-//       <View style={styles.content}>
-//         {isQuiz ? (
-//           <QuizRenderer question={currentItem} />
-//         ) : (
-//           <ContentRenderer item={currentItem} />
-//         )}
+//       <View style={{ flex: 1, padding: 20 }}>
+
+//         {isQuiz
+//           ? <QuizRenderer question={currentItem} />
+//           : <ContentRenderer item={currentItem} />
+//         }
+
 //       </View>
 
 //       <BottomNavigation
@@ -266,22 +95,182 @@ export default function LearningScreen({ route, navigation }: any) {
 //         onPrevious={handlePrevious}
 //         disablePrevious={index === 0}
 //         disableNext={isQuiz ? selected.length === 0 : false}
-//         nextLabel={nextLabel}
+//         nextLabel={submitted ? "Next" : "Submit"}
 //       />
+
 //     </View>
 //   );
 // }
 
-// const styles = StyleSheet.create({
-//   container: {
-//     flex: 1,
-//   },
+import React, { useState } from 'react';
+import { View, StyleSheet } from 'react-native';
+import { useDispatch, useSelector } from 'react-redux';
 
-//   content: {
-//     flex: 1,
-//     padding: 20,
-//   },
-// });
+import AppHeader from '../../../components/AppHeader';
+import BottomNavigation from '../components/BottomNavigation';
+import ContentRenderer from '../components/ContentRenderer';
+import QuizRenderer from '../components/QuizRenderer';
+
+import { submitQuestion } from '../../../store/slices/quizSlice';
+import { RootState } from '../../../store/store';
+
+export default function LearningScreen({ route, navigation }: any) {
+  const { section } = route.params;
+
+  const dispatch = useDispatch();
+
+  const [index, setIndex] = useState(0);
+
+  const isQuiz = section.sectionType === 'quiz';
+
+  const items = isQuiz ? section.questions ?? [] : section.content ?? [];
+
+  const currentItem = items[index];
+
+  const selected = useSelector(
+    (state: RootState) =>
+      state.quiz.answers?.[currentItem?.questionId ?? ''] ?? [],
+  );
+
+  const submitted = useSelector(
+    (state: RootState) =>
+      state.quiz.submitted?.[currentItem?.questionId ?? ''] ?? false,
+  );
+
+  if (!currentItem) return null;
+
+  const isLast = index === items.length - 1;
+
+  /* ---------- CHECK IF ANSWER CORRECT ---------- */
+
+  const isCorrect = (() => {
+    if (!isQuiz) return true;
+
+    if (currentItem.type === 'true_false') {
+      return (
+        selected.length === 1 &&
+        String(selected[0]) === String(currentItem.correctOptions)
+      );
+    }
+
+    if (currentItem.type === 'single_choice') {
+      const correctIds = (currentItem.correctOptions ?? []).map(String);
+
+      return selected.length === 1 && correctIds.includes(String(selected[0]));
+    }
+
+    if (currentItem.type === 'image_single_choice') {
+      const correctIds = (currentItem.correctOptions ?? []).map(String);
+
+      return selected.length === 1 && correctIds.includes(String(selected[0]));
+    }
+
+    if (currentItem.type === 'multiple_choice') {
+      const correctIds = currentItem.correctOptions.map(String);
+      const selectedIds = selected.map(String);
+
+      return (
+        selectedIds.length === correctIds.length &&
+        selectedIds.every(id => correctIds.includes(id))
+      );
+    }
+
+    if (currentItem.type === 'match_pairs') {
+      // handled inside component
+      return submitted;
+    }
+    return false;
+  })();
+
+  /* ---------- NEXT BUTTON ---------- */
+
+  const handleNext = () => {
+    /* CONTENT SLIDES */
+    if (!isQuiz) {
+      if (isLast) {
+        navigation.goBack();
+      } else {
+        setIndex(prev => prev + 1);
+      }
+      return;
+    }
+
+    /* QUIZ FLOW */
+
+    if (!submitted) {
+      dispatch(submitQuestion(currentItem.questionId));
+      return;
+    }
+
+    if (!isCorrect) return;
+
+    if (isLast) {
+      navigation.goBack();
+    } else {
+      setIndex(prev => prev + 1);
+    }
+  };
+
+  /* ---------- PREVIOUS BUTTON ---------- */
+
+  const handlePrevious = () => {
+    if (index > 0) {
+      setIndex(prev => prev - 1);
+    }
+  };
+
+  /* ---------- BUTTON LABEL ---------- */
+
+  let nextLabel = 'Next';
+
+  if (isQuiz) {
+    if (!submitted) nextLabel = 'Submit';
+    else if (isLast) nextLabel = 'Finish';
+    else nextLabel = 'Next';
+  } else {
+    nextLabel = isLast ? 'Finish' : 'Next';
+  }
+
+  const progress = (index + 1) / items.length;
+
+  return (
+    <View style={styles.container}>
+      <AppHeader
+        title={section.title}
+        onBack={() => navigation.goBack()}
+        showProgress
+        progress={progress}
+      />
+
+      <View style={styles.content}>
+        {isQuiz ? (
+          <QuizRenderer question={currentItem} />
+        ) : (
+          <ContentRenderer item={currentItem} />
+        )}
+      </View>
+
+      <BottomNavigation
+        onNext={handleNext}
+        onPrevious={handlePrevious}
+        disablePrevious={index === 0}
+        disableNext={isQuiz ? selected.length === 0 : false}
+        nextLabel={nextLabel}
+      />
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+
+  content: {
+    flex: 1,
+    padding: 20,
+  },
+});
 
 // import React, { useState, useEffect } from 'react';
 // import { View, StyleSheet } from 'react-native';
